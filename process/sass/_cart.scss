@@ -1,0 +1,40 @@
+#mn-cart{
+    margin-top: 120px;
+    min-height: calc(100vh - 40px);
+    color: lighten($color: $purple, $amount: 20);
+    h6{
+        color: $pink;
+        font-weight: normal; 
+     
+
+        }
+        
+      
+        .table-cell{
+            font-size:x-large;
+
+        }
+        
+        #promocode{
+            border-color:  $pink ;
+        }
+      .rotate{
+        transform: rotate(90deg);
+
+      }
+    
+        .promo{
+            cursor: pointer;
+        }
+   
+      img{
+          max-width: 100%;
+          max-height: 100%;
+      }
+}
+.title{
+    font-size: xx-large !important;
+    font-weight: bold;   
+    color: lighten($color: $purple, $amount: 10);
+   
+}

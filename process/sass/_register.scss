@@ -1,0 +1,31 @@
+#mn-register
+{
+    margin-top: 150px ;
+    margin-bottom: 100px;
+    min-height: calc(100vh - 40px);
+    h6{
+        @extend .title;
+        font-size: xx-large;
+    }
+    label{
+        color: lighten($color:$purple, $amount: 20);
+    }
+    span{
+        color: lighten($color:$purple, $amount: 20);
+   
+    }
+    .table-cell
+    {
+        border-bottom: .5px solid lighten($color: $pink, $amount: 20);
+    }
+    .get-info{
+        color: $pink;
+        font-weight: bold;
+    }
+    a{
+        color: $pink;
+    }
+    button{
+        width: 290px;
+    }
+}

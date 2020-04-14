@@ -1,0 +1,126 @@
+@media (max-width:991px)
+
+{
+  h4{
+    font-size: 1.7rem;
+
+  }
+  h5{
+    font-size: 1.2rem !important;
+
+  }
+  #ourproducts
+  {
+    img{
+      min-height: 60vh !important;
+    }
+  }
+  .my-nav
+  {
+    background-color:$purple;
+    margin-left: 0 !important;
+  
+
+   .search-button{
+    right: 0;
+    left: 20px;
+    width: 20px;
+  }
+  }
+  .brand
+  {
+    font-size: large;
+    margin: 0 auto;
+ }
+ .br{
+   font-size: .75em;
+ }
+ .cm{
+   display: none;
+ }
+#carousell{
+  margin-top: 37px;
+}
+
+ .content{
+  margin-top: 100px;
+}
+
+
+
+#gender
+{
+    height:1500px;
+.type
+{
+pointer-events:none;
+height: 450px;
+p{
+  top: 80%;
+}
+}
+.w{
+  background-position:center center !important;
+}
+}
+
+
+#mn-cart{
+  border-bottom: 0.5px solid lighten($color: $purple, $amount:20);
+}
+
+
+#mn-account,#mn-register,.check-mn,#mn-cart,.mn,#mn-contact{
+margin-top: 70px !important; 
+
+}
+
+}
+@media(max-width:767px)
+{
+  #mn-oneitem{
+    margin-top: 35px !important; 
+  
+  }
+  .b1 {
+    background-image: url(../images/b3mobile.jpg) !important;
+
+  }
+  .b2{
+    background-image: url(../images/b2.jpg) !important;
+
+  }
+  .b3{
+    background-image: url(../images/b1mobile.jpg) !important;
+  }
+    .my-carousel {
+    height: calc(100vmax - 30px);
+    .carousel-item
+    {
+     height: calc(100vmax - 30px);
+  
+     
+    }}
+
+    
+
+
+}
+@media(max-width:1024px)and(min-width:768px){
+  .my-carousel {
+    height: 42vmax;
+    .carousel-item
+    {
+     height: 42vmax;
+  
+     
+    }}
+    .cm{
+      position: absolute;
+      top: 45% !important;
+    }
+    .cmp{
+      height: 42vmax;
+    }
+    
+}

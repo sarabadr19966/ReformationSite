@@ -1,0 +1,133 @@
+#mn-oneitem{
+     margin-top: 120px;
+    min-height: calc(100vh - 40px);
+    color: lighten($color: $purple, $amount: 20);
+    li{
+        font-family: $special-font;
+        margin-bottom: 10px;
+    }
+
+    .photos{
+        cursor: pointer;
+        img{
+           width: 70px;
+           height: 60px;
+            &:hover{
+                border: 1.5px solid $pink;
+            }   
+    }
+}
+.card{
+    &:not(:last-of-type){
+    border-bottom: 1px solid $pink;
+    }
+
+    button{
+   padding: 0;
+    }
+    .card-header{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.overly
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    @extend %backgroundImg;
+    z-index: 11000;
+    img{
+        border: 1px solid $purple;
+    }
+
+}
+.information{
+  
+h6{
+    color: $pink !important;
+}
+
+
+
+
+
+
+}}
+.colors{
+    span{
+        border: 2px solid $purple;
+        cursor: pointer;
+    }
+    
+}
+.span{
+    color: $pink;
+    font-family: $special-font;
+}
+.dif{
+   color: lighten($color: $purple, $amount: 20);
+   font-family: $special-font;
+
+}
+.headsec{
+    color: lighten($color: $purple, $amount: 20);
+    font-size: 1.6rem;
+    font-family: $special-font;
+}
+.glide__slides{
+    img{
+        height: 400px;
+        width: 100vw;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+.more{
+
+    button{
+     background-color: $pink !important;
+    }
+}
+
+.firstone{
+img{
+    height: calc(100vh - 36.4px);
+   
+}
+}
+
+#sizeSelect{
+    color: white;
+    &:hover{
+        background-color: lighten($color:$pink, $amount: 10);
+        cursor: pointer;
+    }
+} .clicked{
+    background-color: $pink;
+    color:white;
+}
+.chart
+{
+    width: 40px;
+    height: 40px;
+    border: 1px solid $pink;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.5rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+    &:hover{
+    @extend .clicked;
+    }
+}
+.favv{
+    &:hover{
+        text-decoration: underline !important;
+        cursor: pointer;
+    }
+}

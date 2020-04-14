@@ -1,0 +1,10 @@
+#sale{
+    min-height: calc(100vh - 60px);
+    .shop{
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        color: white;
+        font-family: $special-font;
+    }
+}

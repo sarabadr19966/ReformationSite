@@ -1,0 +1,32 @@
+footer{
+    margin: 0;
+    position: relative;
+    background-color: $purple;
+     padding-top: 50px;
+     padding-bottom: 50px;
+    h6 {
+        color: $pink;
+        font-size: xx-large;
+        margin-bottom: 20px;
+    }
+    a{
+        color: whitesmoke;
+        font-size: large;
+        margin-bottom: 10px;
+        i{
+            color: whitesmoke ;
+        } 
+        &:hover{
+            color: whitesmoke ;
+            text-decoration: underline;
+    }
+
+}
+   p{
+    color: $pink;
+    font-size: larger;
+}
+button{
+    border: none !important;
+}
+}

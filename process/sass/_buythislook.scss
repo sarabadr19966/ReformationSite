@@ -1,0 +1,85 @@
+#buyoutfit{
+    a{
+        text-decoration: none;
+    }
+  
+    .headlook{
+        color: lighten($color: white, $amount: 80);
+        font-size: 1.5rem;
+        font-weight: bolder;
+        vertical-align: middle;
+        line-height: 600px;
+    }
+    .shoplook{
+        height:600px;
+        width: 100%;
+    }
+    .shoplookdesk{
+        background-color: #000;
+        opacity: 0;
+        transition:all 1s;
+        .headlook{
+            visibility: hidden;
+        }
+        &:hover{
+        
+            opacity: 0.6;
+
+            .headlook{
+                visibility: visible;
+            }
+        }
+    }
+
+    .sh1{
+        background-image: url(../images/shoplook1.jpg);
+        @extend %backgroundImg;
+        background-position: top center !important;
+    }
+    .sh2{
+        background-image: url(../images/shooplook2.jpg);
+        @extend %backgroundImg;
+        background-position: top center !important;
+    }
+    .sh3{
+        background-image: url(../images/shooplook3.jpg);
+        @extend %backgroundImg;
+        background-position: top center !important;
+    }
+    .sh4{
+        background-image: url(../images/shooplook4.jpg);
+        @extend %backgroundImg;
+        background-position: top center !important;
+    }
+
+}
+#modallookshop{
+    a{
+        color: $purple;
+        font-weight: bold;
+    }
+    .chosephot{
+        img{
+        width: 57px !important;
+        height: 86.063px !important;
+        }
+    }
+.white{
+    background-color: white;
+    border-radius: 50%;
+}
+.black
+{
+    background-color: black;
+    border-radius: 50%;
+
+}
+.s2{
+    height: 800px;
+    width: 400px !important;
+    background-image: url(../images/shoplook1.jpg);
+    @extend %backgroundImg;
+}
+
+
+}

@@ -1,0 +1,141 @@
+#mn-shop{
+    margin-top: 80px ;
+    margin-bottom: 100px;
+    min-height: calc(100vh - 40px);
+    color: lighten($color: $purple, $amount: 20) !important;
+
+  
+    .filter
+    {
+      .stick-top{
+          top: 60px;
+            max-height: calc(100vh);
+                 
+            z-index: 50;
+            overflow: auto;
+            
+            -webkit-overflow-scrolling: touch;
+            scroll-margin-left: 20px;
+            padding-bottom:200px;
+      }
+     
+        
+    
+     
+      h2{
+          padding: 0 !important;
+      }
+        button{
+            color: lighten($color: $purple, $amount: 20) !important;
+
+            text-decoration: none;
+            font-size: large;
+            font-weight: bold;
+            font-family: $special-font;
+            padding: 0 !important;
+
+    
+        }
+    
+     .card{
+            &:not(:last-of-type){
+            border-bottom: 1px solid $pink;
+            }
+
+         
+        }
+      
+        
+          label{
+              color: lighten($color: $purple, $amount: 20);
+          }
+        
+            .c{
+               font-size: medium !important;
+               font-weight: normal;
+            
+            }
+        
+    }
+    .checkmark{
+        text-align: center;
+        vertical-align: middle;
+        line-height: 1em;
+        i{
+            color: whitesmoke;
+            visibility: hidden;
+        }
+    }
+    .container-check input:checked ~ .checkmark {
+        i{
+            visibility:visible;
+        }
+    }
+    
+    
+        .colors{
+            position: static;
+        }
+        .quick-add{
+            bottom: 150px;
+        }
+
+     
+   
+        .mob{
+            position: sticky;
+            top: 36px;
+            z-index: 90;         
+        }
+        .custom-select{
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: $pink !important;
+            color: whitesmoke !important;
+            height: 42.4px;
+        }
+        .overly{
+       
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background-color: white;
+            z-index: 11000;
+            .stick-top{
+                padding-bottom: 320px;
+            }
+           
+            .title{
+                color: lighten($color: $purple, $amount: 20);
+                font-family: $special-font;
+    
+            }
+ 
+         
+        }
+    }
+    .sort{
+        color:lighten($color: $purple, $amount: 20);
+        font-weight: bold;
+        font-size: large;
+    }
+    .accordion{
+        .card-header
+        {
+            background-color:white;
+            border: none !important;
+          
+        }
+        .card{
+            border: none;
+            background-color:white ;
+        }
+        .rotate{
+            transform: rotate(180deg);
+      
+          }
+    }
+  
