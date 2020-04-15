@@ -437,7 +437,8 @@ input[type=number] {
   width: 100%;
   overflow-x: auto;
   white-space: nowrap;
-  -ms-overflow-style: none; }
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
   #stock::-webkit-scrollbar {
     display: none; }
   #stock .stk {
@@ -758,12 +759,12 @@ footer {
   color: #2a5592 !important; }
   #mn-shop .filter .stick-top {
     top: 60px;
-    max-height: calc(100vh);
+    max-height: calc(100vh - 180px);
     z-index: 50;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     scroll-margin-left: 20px;
-    padding-bottom: 200px; }
+    padding-bottom: 10px; }
   #mn-shop .filter h2 {
     padding: 0 !important; }
   #mn-shop .filter button {
@@ -797,6 +798,8 @@ footer {
     position: sticky;
     top: 36px;
     z-index: 90; }
+  #mn-shop .filter-mob {
+    height: 42.4px; }
   #mn-shop .custom-select {
     border: none;
     font-weight: bold;
@@ -805,6 +808,9 @@ footer {
     color: whitesmoke !important;
     height: 42.4px; }
   #mn-shop .overly {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-margin-left: 20px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -817,6 +823,10 @@ footer {
     #mn-shop .overly .title, #mn-shop .overly #mn-account h6, #mn-account #mn-shop .overly h6, #mn-shop .overly #mn-register h6, #mn-register #mn-shop .overly h6 {
       color: #2a5592;
       font-family: "Oxanium", cursive; }
+    #mn-shop .overly .stick {
+      top: 60px;
+      max-height: calc(100vh);
+      z-index: 50; }
 
 .sort {
   color: #2a5592;
