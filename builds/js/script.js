@@ -203,6 +203,7 @@ $('.navbar-toggler,.overlay').on('click',function(){
       $(".quick-add").addClass("d-none");
       $(".clr").addClass("d-none");
       $(".item i").addClass("d-none");
+      $(`.img1`).css("opacity",'1');
     }
     else{
      $(".item ").hover(function(){
