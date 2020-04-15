@@ -12,7 +12,7 @@ $('.search-toggle').on('click', function() {
   $(this).toggleClass('active');
 
 });
-$('.carousel').carousel({
+$('.mycarousel').carousel({
   interval: 4000,
   pause:false
 });
@@ -419,7 +419,7 @@ if($('#one-item') && $('#one-item').length  ||$('#modallookshop') && $('#modallo
     startAt: 0,
     animationTimingFunc:"ease",
     animationDuration:1000,
-    autoplay:2000,
+    autoplay:3000,
     swipeThreshold: 60,
     perView: 1,
 
@@ -443,7 +443,7 @@ if($('#one-item') && $('#one-item').length  ||$('#modallookshop') && $('#modallo
     cursor: 'crosshair',
     zoomWindowFadeIn: 500,
     zoomWindowFadeOut: 750,
-    scrollZoom:true
+    scrollZoo:true
 }); ;
 
   })
