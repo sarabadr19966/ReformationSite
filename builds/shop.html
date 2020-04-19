@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Reformation</title>
+       <!-- add icon link -->
+       <link rel = "icon" href ="images/value.png" type = "image/x-icon"> 
     <link rel="stylesheet" href="css/glide.core.min.css">
     <link rel="stylesheet" href="css/glide.theme.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -197,149 +199,150 @@
 
 
          
-                   <li class="dropdown mega-menu ">
-                    <a class="nav-link  dropdown-toggle drop  mb-0" id="mega-one" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       Whishlist 
-                    </a>
-                    <div class="dropdown-menu mega cart rounded-0 border-0 mega-menu mt-0" aria-labelledby="mega-one">
-                      
-                        <div class="row mx-0 mt-2">
-                          <div class="col-8">
-                            <h6>Recently Added</h6>
-                          </div>
-                          <div class="col-4">
-                          <span> <a href="wishlist.html">View All</a></span>
-                          </div>
+                 <li class="dropdown mega-menu ">
+                  <a class="nav-link  dropdown-toggle drop  mb-0" id="mega-one" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Whishlist 
+                  </a>
+                  <div class="dropdown-menu mega cart wish rounded-0 border-0 mega-menu mt-0" aria-labelledby="mega-one">
+                    
+                      <div class="row mx-0 mt-2">
+                        <div class="col-8">
+                          <h6 class="recent">Recently Added</h6>
                         </div>
-                     <div class="row  justify-content-center mx-0 mt-2">
-                       <div class="col-6">
-                         <img src="images/original (1).jpg" class="img-fluid">
-                       </div>
-                       <div class="col-6 mb-3">
-                        <img src=" images/original(2).jpg" class="img-fluid">
+                        <div class="col-4">
+                        <span> <a href="wishlist.html">View All</a></span>
+                        </div>
                       </div>
-                      
-                       
-                       </div>
-                       </div>
+                   <div class="row  justify-content-center mx-0 mt-2">
+                     <div class="col-6">
+                      <a href="oneItem.html"> <img src="images/original (1).jpg" class="img-fluid"></a>
+                     </div>
+                     <div class="col-6 mb-3">
+                      <a href="oneItem.html"><img src=" images/original(2).jpg" class="img-fluid"></a>
+                    </div>
+                    
+                     
+                     </div>
+                     </div>
+                 </li>
+                 <li class="nav-item ">
+                  <a role="button" class="btn nav-link" data-toggle="modal" data-target="#loginWait">
+                    <i class="fas fa-users fa-lg"></i>
+                  </a>
+                  <div class="modal  fade" id="loginWait" tabindex="-1" role="dialog" aria-labelledby="loginWaitTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                          </button>
+                        </div>
+                        <div class="container">
+                          <div class="row justify-content-center">
+                            <div class="col-10">
+                        <div class="modal-body ">
+                          <h5 class="text-center">Welcome home , Please Sign In <i class="fas fa-heart"></i><h5>
+                            <form>
+                              <div class="form-group mt-5">
+                                <label for="emailwait">Email address</label>
+                                <input type="email" class="form-control" id="emailwait" aria-describedby="emailHelp" placeholder="Enter email">
+                              </div>
+                              <div class="form-group">
+                                <label for="passwordwait">Password</label>
+                                <input type="password" class="form-control mb-2" id="passwordwait" placeholder="Password">
+                                <a href="#"   data-toggle="tooltip" data-placement="top" title="Request to reset your password" class="text-right pass"> <small  class="form-text">Forget Password ?!</small></a>
+                                 
+                              </div>
+                              <a class="btn bun form-control mb-4" role="button">Sign In </a>
+                              <a href="register.html"  class="text-center pass"> <small  class="form-text ">Create Account</small></a>
+  
+                              </form>
+                        </div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
                    </li>
-                   <li class="nav-item ">
-                    <a role="button" class="btn nav-link" data-toggle="modal" data-target="#loginWait">
-                      <i class="fas fa-users fa-lg"></i>
-                    </a>
-                    <div class="modal  fade" id="loginWait" tabindex="-1" role="dialog" aria-labelledby="loginWaitTitle" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                            </button>
-                          </div>
-                          <div class="container">
-                            <div class="row justify-content-center">
-                              <div class="col-10">
-                          <div class="modal-body ">
-                            <h5 class="text-center">Welcome home , Please Sign In <i class="fas fa-heart"></i><h5>
-                              <form>
-                                <div class="form-group mt-5">
-                                  <label for="emailwait">Email address</label>
-                                  <input type="email" class="form-control" id="emailwait" aria-describedby="emailHelp" placeholder="Enter email">
-                                </div>
-                                <div class="form-group">
-                                  <label for="passwordwait">Password</label>
-                                  <input type="password" class="form-control mb-2" id="passwordwait" placeholder="Password">
-                                  <a href="#"   data-toggle="tooltip" data-placement="top" title="Request to reset your password" class="text-right pass "> <small  class="form-text">Forget Password ?!</small></a>
-                                </div>
-                                <a class="btn bun form-control mb-4" role="button">Sign In </a>
-                                <a href="register.html"  class="text-center pass"> <small  class="form-text">Create Account</small></a>
-    
-                                </form>
-                          </div>
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
-                     </li>
-                   
-                  <li class="dropdown mega-menu ">
-                    <a class="nav-link  dropdown-toggle drop  mb-0" id="mega-one" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class=" fas fa-shopping-cart "> (Cart)</i>
-                    </a>
-                    <div class="dropdown-menu mega cart rounded-0 border-0 mega-menu mt-0" aria-labelledby="mega-one">
-                      <div class="row content ">
-                     <div class="row  justify-content-center mx-2 mt-2">
-                       <div class="col-4">
-                         <img src="images/original (1).jpg" class="img-fluid">
-                       </div>
-                       <div class="col-8">
-                        <h6>70S Sweat Shorts</h6>
+                 
+                <li class="dropdown mega-menu ">
+                  <a class="nav-link  dropdown-toggle drop  mb-0" id="mega-one" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class=" fas fa-shopping-cart "> (Cart)</i>
+                  </a>
+                  <div class="dropdown-menu mega cart rounded-0 border-0 mega-menu mt-0 pb-2" aria-labelledby="mega-one">
+                    <div class="row content ">
+                   <div class="row  justify-content-center mx-2 mt-2">
+                     <div class="col-4">
+                      <a href="oneItem.html"> <img src="images/original (1).jpg" class="img-fluid"></a>
+                     </div>
+                     <div class="col-8">
+                      <a href="oneItem.html"> <h6>70S Sweat Shorts</h6></a>
 
-                        <span>EGP </span> <span class="price">990.00</span>
-                        <span class="d-block mt-3">Color : Navy</span>
-                        <span>Size : Xs</span>
-                          
-                      
+                      <span>EGP </span> <span class="price">990.00</span>
+                      <span class="d-block mt-3">Color : Navy</span>
+                      <span>Size : Xs</span>
                         
-                     </div>
-                     <div class="row justify-content-center">
-                     <div class="item1 input-group  mt-3 ">
-                      <div class="input-group-prepend">
-                       <span class=" b bun dec d-inline-block text-center" >-</span>
-                      </div>
                     
-                      <span class="text-center d-inline-block inc-dec">1</span>
-                      <div class="input-group-append">
-                        <span class="b bun inc d-inline-block text-center" >+</span>
-                      </div>
-                     <a href="#"> <i class="far fa-trash-alt fa-lg ml-2 mt-2"></i></a>
-                    </div>
-                    </div>
-                     </div>
+                      
+                   </div>
+                   <div class="item1 row justify-content-center align-content-center text-center mt-3 ">
                     
-                     
-                     <div class="row  justify-content-center mt-5 mx-2">
-                      <div class="col-4">
-                        <img src="images/original (4).jpg" class="img-fluid">
-                      </div>
-                      <div class="col-8">
-                       <h6>Emerald Sofi Jumpsuit</h6>
+                     <span class="  bun dec " >-</span>
+                    
+                  
+                    <span class=" inc-dec">1</span>
+                    
+                      <span class="bun inc" >+</span>
+                      <a href="#" class="align-self-center"> <i class="far fa-trash-alt fa-lg ml-2"></i></a>
 
-                       <span>EGP </span> <span class="price">5500.00</span>
-                       <span class="d-block mt-3">Color : Green</span>
-                       <span>Size : Xl</span>
-                         
-                     
+                
+
+                  </div>
+                   </div>
+                  
+                   
+                   <div class="row  justify-content-center mt-5 mx-2">
+                    <div class="col-4">
+                      <a href="oneItem.html"> <img src="images/original (4).jpg" class="img-fluid"></a>
                     </div>
-                    <div class="row justify-content-center">
-                    <div class="item2 input-group mb-3 mt-3 ">
-                      <div class="input-group-prepend">
-                       <span class=" b bun dec d-inline-block text-center" >-</span>
-                      </div>
+                    <div class="col-8">
+                      <a href="oneItem.html">  <h6>Emerald Sofi Jumpsuit</h6></a>
+
+                     <span>EGP </span> <span class="price">5500.00</span>
+                     <span class="d-block mt-3">Color : Green</span>
+                     <span>Size : Xl</span>
+                       
+                   
+                  </div>
+                  <div class="item2 row justify-content-center align-content-center text-center mt-3 ">
                     
-                      <span class="text-center d-inline-block inc-dec">1</span>
-                      <div class="input-group-append">
-                        <span class="b bun inc d-inline-block text-center" >+</span>
-                      </div>
-                     <a href="#"> <i class="far fa-trash-alt fa-lg ml-2 mt-2"></i></a>
+                    <span class="  bun dec " >-</span>
+                   
+                 
+                   <span class=" inc-dec">1</span>
+                   
+                     <span class="bun inc" >+</span>
+                     <a href="#" class="align-self-center"> <i class="far fa-trash-alt fa-lg ml-2"></i></a>
+
+               
+
                  </div>
-                </div>
+                  </div>
                     </div>
-                      </div>
-                    <div class="row  justify-content-between mx-2 mt-5 mb-4">
-                      <div class="col-6">
-                        <a href="cart.html" class="btn  bun"> View Cart </a>
-                      </div>
-                      <div class="col-6 text-right">
-                        <a href="checkout.html" class="btn  bun"> Checkout </a>
-                      </div>
+                  <div class="row  justify-content-between mx-2 mt-5 mb-4">
+                    <div class="col-6">
+                      <a href="cart.html" class="btn  bun"> View Cart </a>
                     </div>
-                    <p class="text-center">Free Express Shipping</p>
-                    <p class="text-center">Duties & Taxes are graunteed</p>
-                     </div>
-                     
-                     </li>
+                    <div class="col-6 text-right">
+                      <a href="checkout.html" class="btn  bun"> Checkout </a>
+                    </div>
+                  </div>
+                  <p class="text-center">Free Express Shipping</p>
+                  <p class="text-center">Duties & Taxes are graunteed</p>
+                   </div>
+                   
+                   </li>
                   
               </ul>
 
@@ -697,14 +700,15 @@
               Filter
             </a>
           </div>
-          <div class="col-6 selc  d-md-none mb-5 px-0 ">
-            <select class="custom-select  bun rounded-0">
-              <option selected disabled>Sort By</option>
-              <option value="1">Newest</option>
-              <option value="2">Most Favorited</option>
-              <option value="3">price H to L</option>
-              <option value="4">price L to H</option>
-            </select>
+          <div class="col-6 selc  d-md-none mb-5 px-0 dropdown mobdrop">   
+        <a class="nav-link dropdown-toggle text-center  sort" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Sort By</a>
+        <div class="dropdown-menu rounded-0 border-0 w-100" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Newest</a>
+          <a class="dropdown-item" href="#">Most Favorited</a>
+          <a class="dropdown-item" href="#">price H to L</a>
+          <a class="dropdown-item" href="#">price L to H</a>  
+        </div>
           </div>
         </div>
         <div class="overly d-none">
@@ -724,14 +728,14 @@
                 <div class="accordion " id="options">
 
                   <div class="card">
-                    <div class="card-header" id="color">
+                    <div class="card-header px-0" id="color">
                         <h2 class="mb-0">
                        
-                          <button class="btn btn-link w-100 flip" type="button" data-toggle="collapse" data-target="#chooseClr" aria-expanded="true" aria-controls="chooseClr">
-                         
-        
-                           <span class="text-left d-inline-block w-75 mr-3"> Color </span>  <i class="fas openClose fa-angle-down"></i>
-                       
+                          <button class="btn  w-100 flip" type="button" data-toggle="collapse" data-target="#chooseClr" aria-expanded="true" aria-controls="chooseClr">
+                            <div class="d-flex justify-content-between">
+                              <span> Color </span> 
+                              <i class="fas openClose fa-angle-down"></i>  
+                            </div>                       
                           </button>
                         
                         </h2>
@@ -765,11 +769,15 @@
                     </div>
                   </div>
                   <div class="card">
-                    <div class="card-header" id="sizee">
+                    <div class="card-header px-0" id="sizee">
                       <h2 class="mb-0">
-                          <button class="btn btn-link w-100 flip" type="button" data-toggle="collapse" data-target="#chooseSize" aria-expanded="true" aria-controls="chooseSize">
-                            <span class="text-left d-inline-block w-75 mr-3"> Size </span>  <i class="fas openClose fa-angle-down"></i>
-                          </button>
+                          <button class="btn  w-100 flip" type="button" data-toggle="collapse" data-target="#chooseSize" aria-expanded="true" aria-controls="chooseSize">
+
+                            <div class="d-flex justify-content-between">
+                              <span > Size </span> 
+                              <i class="fas openClose fa-angle-down"></i>  
+                            </div>   
+                         </button>
                      
                       </h2>
                     </div>
@@ -780,11 +788,12 @@
         
                         <div class="accordion" id="sizess">
                           <div class="card">
-                            <div class="card-header" id="s1">
+                            <div class="card-header px-0" id="s1">
                               <h2 class="mb-0">
-                                <button class="btn btn-link c w-100" type="button" data-toggle="collapse" data-target="#clothing" aria-expanded="true" aria-controls="clothing">
-                                  <span class="text-left d-inline-block w-75 "> Clothing </span>  <i class="fas fa-plus opcl fa-xs"></i>
-        
+                                <button class="btn  c w-100" type="button" data-toggle="collapse" data-target="#clothing" aria-expanded="true" aria-controls="clothing">
+                                  <div class="d-flex justify-content-between">
+                                    <span> Clothing </span>  <i class="fas fa-plus opcl fa-xs"></i>
+                                   </div>        
                                 </button>
                             
                               </h2>
@@ -821,11 +830,12 @@
                             </div>
                           </div>
                           <div class="card">
-                            <div class="card-header" id="s2">
+                            <div class="card-header px-0" id="s2">
                               <h2 class="mb-0">
-                                  <button class="btn btn-link c w-100" type="button" data-toggle="collapse" data-target="#denim" aria-expanded="true" aria-controls="clothing">
-                                      <span class="text-left d-inline-block w-75 "> Denim </span>  <i class="fas fa-plus opcl fa-xs"></i>
-            
+                                  <button class="btn  c w-100" type="button" data-toggle="collapse" data-target="#denim" aria-expanded="true" aria-controls="clothing">
+                                    <div class="d-flex justify-content-between">
+                                      <span>Denim </span>  <i class="fas fa-plus opcl fa-xs"></i>
+                                     </div>            
                                     </button>
                                 
                               </h2>
@@ -856,11 +866,12 @@
                             </div>
                           </div>
                           <div class="card">
-                            <div class="card-header" id="s3">
+                            <div class="card-header px-0" id="s3">
                               <h2 class="mb-0">
-                                  <button class="btn btn-link c w-100" type="button" data-toggle="collapse" data-target="#shose" aria-expanded="true" aria-controls="clothing">
-                                    <span class="text-left d-inline-block w-75 "> Shoses </span>  <i class="fas fa-plus opcl fa-xs"></i>
-        
+                                  <button class="btn  c w-100" type="button" data-toggle="collapse" data-target="#shose" aria-expanded="true" aria-controls="clothing">
+                                    <div class="d-flex justify-content-between">
+                                      <span> Shoses </span>  <i class="fas fa-plus opcl fa-xs"></i>
+                                     </div>        
                                   </button>
                                
                               </h2>
@@ -895,56 +906,54 @@
                     </div>
                   </div>
         
-        
-        
-                  <div class="card">
-                    <div class="card-header" id="Print">
-                      <h2 class="mb-0">
-                          <button class="btn btn-link w-100 flip" type="button" data-toggle="collapse" data-target="#choosePrint" aria-expanded="true" aria-controls="choosePrint">
-                         
-        
-                            <span class="text-left d-inline-block w-75 mr-3"> Print </span>  <i class="fas openClose fa-angle-down"></i>
-                       
+          <div class="card">
+                    <div class="card-header px-0" id="Print">
+                        <h2 class="mb-0">
+                          <button class="btn  w-100 flip" type="button" data-toggle="collapse" data-target="#choosePrint" aria-expanded="true" aria-controls="choosePrint">
+                            <div class="d-flex justify-content-between">
+                              <span> Print </span> 
+                              <i class="fas openClose fa-angle-down"></i>  
+                            </div>                       
                           </button>
-                      
-                      </h2>
+                        </h2>
                     </div>
-                    <div id="choosePrint" class="collapse" aria-labelledby="Print" data-parent="#options">
+                
+                    <div id="choosePrint" class="collapse " aria-labelledby="Print" data-parent="#options">
                       <div class="card-body">
-                        <div class="card-body">
-                          <label class="container-check  ml-md-2 ">
-                            <input type="checkbox"  name="printing" value="Abstract">
-                            <span class="checkmark" > <i class="fas fa-check "></i></span>
-                            Abstract
-                          </label>
-                          <label class="container-check  ml-md-2 ">
-                            <input type="checkbox"  name="printing" value="Animal">
-                            <span class="checkmark" > <i class="fas fa-check "></i></span>
-                             Animal
-                          </label>
-                          <label class="container-check  ml-md-2 ">
-                            <input type="checkbox"  name="printing" value="Stripes">
-                            <span class="checkmark" > <i class="fas fa-check "></i></span>
-                             Stripes
-                          </label>
-                          <label class="container-check  ml-md-2 ">
-                            <input type="checkbox"  name="printing" value="Flowry">
-                            <span class="checkmark" > <i class="fas fa-check "></i></span>
-                             Flowry
-                          </label>
-                        </div>
+                        <label class="container-check  ml-md-2 ">
+                          <input type="checkbox"  name="printing" value="Abstract">
+                          <span class="checkmark" > <i class="fas fa-check "></i></span>
+                           Abstract
+                        </label>
+                        <label class="container-check  ml-md-2 ">
+                          <input type="checkbox"  name="printing" value="Animal">
+                          <span class="checkmark" > <i class="fas fa-check "></i></span>
+                           Animal
+                        </label>
+                        <label class="container-check  ml-md-2 ">
+                          <input type="checkbox"  name="printing" value="Stripes">
+                          <span class="checkmark" > <i class="fas fa-check "></i></span>
+                           Stripes
+                        </label>
+                        <label class="container-check  ml-md-2 ">
+                          <input type="checkbox"  name="printing" value="Flowry">
+                          <span class="checkmark" > <i class="fas fa-check "></i></span>
+                           Flowry
+                        </label>
                       </div>
                     </div>
                   </div>
         
-                  <div class="card">
-                    <div class="card-header" id="occasion">
-                      <h2 class="mb-0">
-                          <button class="btn btn-link w-100 flip" type="button" data-toggle="collapse" data-target="#chooseOccasion" aria-expanded="true" aria-controls="chooseOccasion">
-                         
         
-                            <span class="text-left d-inline-block w-75 mr-3"> occasion </span>  <i class="fas openClose fa-angle-down"></i>
-                       
+                  <div class="card">
+                    <div class="card-header px-0" id="occasion">
+                      <h2 class="mb-0">
+                          <button class="btn  w-100 flip" type="button" data-toggle="collapse" data-target="#chooseOccasion" aria-expanded="true" aria-controls="chooseOccasion">
+                         
+                            <div class="d-flex justify-content-between">
+                              <span> occasion</span> 
+                              <i class="fas openClose fa-angle-down"></i>  
+                            </div>                         
                           </button>
                         
                       </h2>
@@ -982,19 +991,15 @@
                     </div>
                   </div>
                   <div class="card">
-                    <div class="card-header" id="Prices">
+                    <div class="card-header px-0" id="Prices">
                         <h2 class="mb-0">
-                       
-                          <button class="btn btn-link w-100 flip" type="button" data-toggle="collapse" data-target="#choosePrice" aria-expanded="true" aria-controls="choosePrice">
-                         
-        
-                           <span class="text-left d-inline-block w-75 mr-3"> Price </span>  <i class="fas openClose fa-angle-down"></i>
-                       
+                          <button class="btn  w-100 flip" type="button" data-toggle="collapse" data-target="#choosePrice" aria-expanded="true" aria-controls="choosePrice">
+                            <div class="d-flex justify-content-between">
+                              <span> Price</span> 
+                              <i class="fas openClose fa-angle-down"></i>  
+                            </div>                         
                           </button>
-                        
                         </h2>
-                      
-                    
                     </div>
                 
                     <div id="choosePrice" class="collapse " aria-labelledby="Prices" data-parent="#options">
@@ -1070,16 +1075,15 @@
                 <div class="accordion  " id="optionss">
 
                   <div class="card">
-                    <div class="card-header pt-0" id="color">
+                    <div class="card-header px-0 pt-0" id="color">
                         <h2 class="mb-0">
                        
-                          <button class="btn btn-link w-100 flip" type="button" data-toggle="collapse" data-target="#chooseClr" aria-expanded="true" aria-controls="chooseClr">
-                         
-        
-                           <span class="text-left d-inline-block w-75 mr-3"> Color </span>  <i class="fas openClose fa-angle-down"></i>
-                       
+                          <button class="btn  w-100 flip" type="button" data-toggle="collapse" data-target="#chooseClr" aria-expanded="true" aria-controls="chooseClr">
+                            <div class="d-flex justify-content-between">
+                              <span> Color</span> 
+                              <i class="fas openClose fa-angle-down"></i>  
+                            </div>                        
                           </button>
-                        
                         </h2>
                       
                     
@@ -1111,26 +1115,30 @@
                     </div>
                   </div>
                   <div class="card">
-                    <div class="card-header" id="sizee">
+                    <div class="card-header px-0" id="sizee">
                       <h2 class="mb-0">
-                          <button class="btn btn-link w-100 flip" type="button" data-toggle="collapse" data-target="#chooseSize" aria-expanded="true" aria-controls="chooseSize">
-                            <span class="text-left d-inline-block w-75 mr-3"> Size </span>  <i class="fas openClose fa-angle-down"></i>
+                          <button class="btn  w-100 flip" type="button" data-toggle="collapse" data-target="#chooseSize" aria-expanded="true" aria-controls="chooseSize">
+                            <div class="d-flex justify-content-between">
+                              <span>Size</span> 
+                              <i class="fas openClose fa-angle-down"></i>  
+                            </div>   
                           </button>
                      
                       </h2>
                     </div>
                     <div id="chooseSize" class="collapse" aria-labelledby="sizee" data-parent="#optionss">
-                      <div class="card-body">
+                      <div class="card-body pt-0">
                        
                             
         
-                        <div class="accordion" id="sizes">
+                        <div class="accordion" id="sizes" >
                           <div class="card">
-                            <div class="card-header" id="s1">
+                            <div class="card-header px-0" id="s1">
                               <h2 class="mb-0">
-                                <button class="btn btn-link c w-100" type="button" data-toggle="collapse" data-target="#clothing" aria-expanded="true" aria-controls="clothing">
-                                  <span class="text-left d-inline-block w-75 "> Clothing </span>  <i class="fas fa-plus opcl fa-xs"></i>
-        
+                                <button class="btn  c w-100" type="button" data-toggle="collapse" data-target="#clothing" aria-expanded="true" aria-controls="clothing">
+                                 <div class="d-flex justify-content-between">
+                                  <span> Clothing </span>  <i class="fas fa-plus opcl fa-xs"></i>
+                                 </div>
                                 </button>
                             
                               </h2>
@@ -1167,11 +1175,12 @@
                             </div>
                           </div>
                           <div class="card">
-                            <div class="card-header" id="s2">
+                            <div class="card-header px-0" id="s2">
                               <h2 class="mb-0">
-                                  <button class="btn btn-link c w-100" type="button" data-toggle="collapse" data-target="#denim" aria-expanded="true" aria-controls="denim">
-                                      <span class="text-left d-inline-block w-75 "> Denim </span>  <i class="fas fa-plus opcl fa-xs"></i>
-            
+                                  <button class="btn  c w-100" type="button" data-toggle="collapse" data-target="#denim" aria-expanded="true" aria-controls="denim">
+                                    <div class="d-flex justify-content-between">
+                                      <span> Denim</span>  <i class="fas fa-plus opcl fa-xs"></i>
+                                     </div>            
                                     </button>
                                 
                               </h2>
@@ -1202,11 +1211,12 @@
                             </div>
                           </div>
                           <div class="card">
-                            <div class="card-header" id="s3">
+                            <div class="card-header px-0" id="s3">
                               <h2 class="mb-0">
-                                  <button class="btn btn-link c w-100" type="button" data-toggle="collapse" data-target="#shose" aria-expanded="true" aria-controls="shose">
-                                    <span class="text-left d-inline-block w-75 "> Shoses </span>  <i class="fas fa-plus opcl fa-xs"></i>
-        
+                                  <button class="btn  c w-100" type="button" data-toggle="collapse" data-target="#shose" aria-expanded="true" aria-controls="shose">
+                                    <div class="d-flex justify-content-between">
+                                      <span> Shoes</span>  <i class="fas fa-plus opcl fa-xs"></i>
+                                     </div>        
                                   </button>
                                
                               </h2>
@@ -1243,56 +1253,54 @@
         
         
         
+                
                   <div class="card">
-                    <div class="card-header" id="Print">
-                      <h2 class="mb-0">
-                          <button class="btn btn-link w-100 flip" type="button" data-toggle="collapse" data-target="#choosePrint" aria-expanded="true" aria-controls="choosePrint">
-                         
-        
-                            <span class="text-left d-inline-block w-75 mr-3"> Print </span>  <i class="fas openClose fa-angle-down"></i>
-                       
+                    <div class="card-header px-0" id="Print">
+                        <h2 class="mb-0">
+                          <button class="btn  w-100 flip" type="button" data-toggle="collapse" data-target="#choosePrint" aria-expanded="true" aria-controls="choosePrint">
+                            <div class="d-flex justify-content-between">
+                              <span> Print </span> 
+                              <i class="fas openClose fa-angle-down"></i>  
+                            </div>                       
                           </button>
-                      
-                      </h2>
+                        </h2>
                     </div>
-                    <div id="choosePrint" class="collapse" aria-labelledby="Print" data-parent="#optionss">
+                
+                    <div id="choosePrint" class="collapse " aria-labelledby="Print" data-parent="#optionss">
                       <div class="card-body">
-                        <div class="card-body">
-                          <label class="container-check  ml-md-2 ">
-                            <input type="checkbox"  name="printing" value="Abstract">
-                            <span class="checkmark" > <i class="fas fa-check "></i></span>
-                            Abstract
-                          </label>
-                          <label class="container-check  ml-md-2 ">
-                            <input type="checkbox"  name="printing" value="Animal">
-                            <span class="checkmark" > <i class="fas fa-check "></i></span>
-                             Animal
-                          </label>
-                          <label class="container-check  ml-md-2 ">
-                            <input type="checkbox"  name="printing" value="Stripes">
-                            <span class="checkmark" > <i class="fas fa-check "></i></span>
-                             Stripes
-                          </label>
-                          <label class="container-check  ml-md-2 ">
-                            <input type="checkbox"  name="printing" value="Flowry">
-                            <span class="checkmark" > <i class="fas fa-check "></i></span>
-                             Flowry
-                          </label>
-                        </div>
+                        <label class="container-check  ml-md-2 ">
+                          <input type="checkbox"  name="printing" value="Abstract">
+                          <span class="checkmark" > <i class="fas fa-check "></i></span>
+                           Abstract
+                        </label>
+                        <label class="container-check  ml-md-2 ">
+                          <input type="checkbox"  name="printing" value="Animal">
+                          <span class="checkmark" > <i class="fas fa-check "></i></span>
+                           Animal
+                        </label>
+                        <label class="container-check  ml-md-2 ">
+                          <input type="checkbox"  name="printing" value="Stripes">
+                          <span class="checkmark" > <i class="fas fa-check "></i></span>
+                           Stripes
+                        </label>
+                        <label class="container-check  ml-md-2 ">
+                          <input type="checkbox"  name="printing" value="Flowry">
+                          <span class="checkmark" > <i class="fas fa-check "></i></span>
+                           Flowry
+                        </label>
                       </div>
                     </div>
                   </div>
         
                   <div class="card">
-                    <div class="card-header" id="occasion">
+                    <div class="card-header px-0" id="occasion">
                       <h2 class="mb-0">
-                          <button class="btn btn-link w-100 flip" type="button" data-toggle="collapse" data-target="#chooseOccasion" aria-expanded="true" aria-controls="chooseOccasion">
-                         
-        
-                            <span class="text-left d-inline-block w-75 mr-3"> occasion </span>  <i class="fas openClose fa-angle-down"></i>
-                       
+                          <button class="btn  w-100 flip" type="button" data-toggle="collapse" data-target="#chooseOccasion" aria-expanded="true" aria-controls="chooseOccasion">
+                            <div class="d-flex justify-content-between">
+                              <span> occasion</span> 
+                              <i class="fas openClose fa-angle-down"></i>  
+                            </div>                        
                           </button>
-                        
                       </h2>
                     </div>
                     <div id="chooseOccasion" class="collapse" aria-labelledby="occasion" data-parent="#optionss">
@@ -1327,15 +1335,14 @@
                     </div>
                   </div>
                   <div class="card">
-                    <div class="card-header" id="Prices">
+                    <div class="card-header px-0" id="Prices">
                       <h2 class="mb-0">
-                          <button class="btn btn-link w-100 flip" type="button" data-toggle="collapse" data-target="#choosePrice" aria-expanded="true" aria-controls="choosePrice">
-                         
-        
-                            <span class="text-left d-inline-block w-75 mr-3"> Price</span>  <i class="fas openClose fa-angle-down"></i>
-                       
+                          <button class="btn  w-100 flip" type="button" data-toggle="collapse" data-target="#choosePrice" aria-expanded="true" aria-controls="choosePrice">
+                            <div class="d-flex justify-content-between">
+                              <span> Price</span> 
+                              <i class="fas openClose fa-angle-down"></i>  
+                            </div>                        
                           </button>
-                        
                       </h2>
                     </div>
 

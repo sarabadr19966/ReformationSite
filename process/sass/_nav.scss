@@ -7,7 +7,7 @@
 
 .my-nav
 {
- 
+ transition: all .5s;
     margin: 0;
     padding-top: 0 !important;
     padding-bottom:0 !important;
@@ -15,12 +15,12 @@
  
   li a{
     color: white !important ;
+    cursor: pointer;
   }
     }
   
    
     .dropdown{
-      cursor: pointer;
       color: white;
     
     .drop{
@@ -49,6 +49,7 @@
           font-weight: bold;
           color:$purple !important;
           font-size: larger;
+          cursor:default;
         }
 
        
@@ -73,6 +74,7 @@
 .nav1
 {
   background-color: $purple;
+  
 
 }
 

@@ -21,40 +21,44 @@
     {
         height: 460px;
     }
-    .card{
-        border: none ;
-        height: 400px;
-        img {
-            height: 300px ;
-            width: 100%;
-        }
-        h5{
-            font-size:large ;
-            color: $purple;
-        }
-    }
+
 }
 .cart{
+    max-height: 82vh !important;
     span a{
-        color: $purple !important;
+        color: lighten($color: $purple, $amount: 20) !important;
     }
-    width:320px;
-    left:52%;
-    color: $purple;
+    width:300px;
+    left:60%;
+    color:   lighten($color: $purple, $amount: 20);
     z-index: 2000;
     .row
     {
         height: auto;
     }
     h6{
+        color: lighten($color: $purple, $amount: 20) !important;
         font-weight: bold;
+        &:hover{
+            text-decoration: underline;
+
+        }
     }
     
     .content
     {
-        height: 420px;
+        height:56%;
         overflow-y: auto;
     }
+    }
+    .wish{
+        left: 50%;
+        .recent{
+            color: $pink !important;
+            &:hover{
+                text-decoration: none;
+            }
+        }
     }
 .kids-page
 {

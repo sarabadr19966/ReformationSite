@@ -3,7 +3,6 @@
     min-height: calc(100vh - 40px);
     color: lighten($color: $purple, $amount: 20);
     li{
-        font-family: $special-font;
         margin-bottom: 10px;
     }
 
@@ -47,15 +46,10 @@
 }
 .information{
   
-h6{
+h2{
     color: $pink !important;
+
 }
-
-
-
-
-
-
 }}
 .colors{
     span{
@@ -83,16 +77,8 @@ h6{
         height: 400px;
         width: 100vw;
     }
-    a{
-        text-decoration: none;
-    }
 }
-.more{
 
-    button{
-     background-color: $pink !important;
-    }
-}
 
 .firstone{
 img{

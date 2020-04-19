@@ -6,14 +6,15 @@
   font-size: large; }
 
 .my-nav {
+  transition: all .5s;
   margin: 0;
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
   .my-nav li a {
-    color: white !important; }
+    color: white !important;
+    cursor: pointer; }
 
 .dropdown {
-  cursor: pointer;
   color: white; }
   .dropdown .drop {
     background: none;
@@ -31,7 +32,8 @@
     .dropdown .dropdown-menu .dropdown-header {
       font-weight: bold;
       color: #132743 !important;
-      font-size: larger; }
+      font-size: larger;
+      cursor: default; }
 
 .brand {
   color: #ea728c !important;
@@ -56,7 +58,6 @@ body {
   padding: 0; }
 
 .b {
-  font-family: "Oxanium", cursive;
   font-weight: bold;
   font-size: large;
   color: #ea728c !important;
@@ -64,7 +65,6 @@ body {
 
 h3 {
   color: whitesmoke;
-  font-family: "Oxanium", cursive;
   font-weight: bold;
   font-size: 4rem; }
 
@@ -107,7 +107,6 @@ i {
   color: white !important;
   background-color: #ea728c;
   border: 2px solid #ea728c;
-  font-family: "Oxanium", cursive;
   font-weight: bold;
   font-size: large; }
 
@@ -127,9 +126,7 @@ input[type=number] {
 
 .inc-dec, .inc, .dec {
   width: 30px !important;
-  border: 1px solid #ea728c;
-  line-height: 2rem;
-  vertical-align: middle; }
+  border: 1px solid #ea728c; }
 
 .inc, .dec {
   cursor: pointer; }
@@ -164,26 +161,16 @@ input[type=number] {
     border: none;
     outline: 0; }
 
-.fa-users {
-  cursor: pointer; }
+.modal-body label {
+  color: #ea728c;
+  font-weight: normal; }
 
-.modal-body {
-  font-family: "Oxanium", cursive; }
-  .modal-body label {
-    color: #ea728c;
-    font-weight: normal; }
+.modal-body a {
+  cursor: pointer; }
   .modal-body a.pass {
-    cursor: pointer;
     color: gray !important; }
     .modal-body a.pass:hover {
       text-decoration: underline !important; }
-
-.my-nav:before, .my-nav:after {
-  content: '';
-  display: table; }
-
-.my-nav:after {
-  clear: both; }
 
 .search-button {
   position: absolute;
@@ -192,6 +179,7 @@ input[type=number] {
   transform: translate(0, -50%); }
 
 .search-toggle {
+  cursor: pointer;
   position: relative;
   display: block;
   height: 20px;
@@ -398,6 +386,9 @@ input[type=number] {
   background-image: url(../images/shooplook4.jpg);
   background-position: top center !important; }
 
+#modallookshop .title, #modallookshop #mn-account h6, #mn-account #modallookshop h6, #modallookshop #mn-register h6, #mn-register #modallookshop h6 {
+  font-size: larger !important; }
+
 #modallookshop a {
   color: #132743;
   font-weight: bold; }
@@ -412,6 +403,10 @@ input[type=number] {
 
 #modallookshop .black {
   background-color: black;
+  border-radius: 50%; }
+
+#modallookshop .Ivory {
+  background-color: #fafae9;
   border-radius: 50%; }
 
 #modallookshop .s2 {
@@ -443,7 +438,7 @@ input[type=number] {
     display: none; }
   #stock .stk {
     width: 245px;
-    height: fit-content;
+    height: 245px;
     display: inline-block;
     cursor: pointer; }
     #stock .stk .details {
@@ -451,7 +446,7 @@ input[type=number] {
       position: relative;
       bottom: 72px;
       -webkit-font-smoothing: antialiased;
-      transition: opacity .35s;
+      transition: all .35s;
       opacity: 0; }
     #stock .stk:hover .details {
       opacity: .8; }
@@ -471,30 +466,31 @@ input[type=number] {
 .mega .row {
   height: 460px; }
 
-.mega .card {
-  border: none;
-  height: 400px; }
-  .mega .card img {
-    height: 300px;
-    width: 100%; }
-  .mega .card h5 {
-    font-size: large;
-    color: #132743; }
-
 .cart {
-  width: 320px;
-  left: 52%;
-  color: #132743;
+  max-height: 82vh !important;
+  width: 300px;
+  left: 60%;
+  color: #2a5592;
   z-index: 2000; }
   .cart span a {
-    color: #132743 !important; }
+    color: #2a5592 !important; }
   .cart .row {
     height: auto; }
   .cart h6 {
+    color: #2a5592 !important;
     font-weight: bold; }
+    .cart h6:hover {
+      text-decoration: underline; }
   .cart .content {
-    height: 420px;
+    height: 56%;
     overflow-y: auto; }
+
+.wish {
+  left: 50%; }
+  .wish .recent {
+    color: #ea728c !important; }
+    .wish .recent:hover {
+      text-decoration: none; }
 
 .kids-page {
   background-image: url(../images/kids-page.webp);
@@ -541,7 +537,8 @@ footer {
     color: #ea728c;
     font-size: larger; }
   footer button {
-    border: none !important; }
+    border: none !important;
+    height: 38px; }
 
 .mn {
   margin-top: 100px;
@@ -583,6 +580,7 @@ footer {
   transition: all 1s; }
 
 .item .quick-add {
+  overflow: hidden;
   width: 70%;
   height: 40px;
   position: absolute;
@@ -704,6 +702,8 @@ footer {
   #mn-cart h6 {
     color: #ea728c;
     font-weight: normal; }
+    #mn-cart h6 a {
+      color: #ea728c; }
   #mn-cart .table-cell {
     font-size: x-large; }
   #mn-cart #promocode {
@@ -763,31 +763,27 @@ footer {
     z-index: 50;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    scroll-margin-left: 20px;
     padding-bottom: 10px; }
-  #mn-shop .filter h2 {
-    padding: 0 !important; }
   #mn-shop .filter button {
     color: #2a5592 !important;
-    text-decoration: none;
     font-size: large;
-    font-weight: bold;
-    font-family: "Oxanium", cursive;
-    padding: 0 !important; }
+    font-weight: bold; }
   #mn-shop .filter .card:not(:last-of-type) {
-    border-bottom: 1px solid #ea728c; }
+    border-bottom: 1.1px solid #ea728c; }
   #mn-shop .filter label {
     color: #2a5592; }
   #mn-shop .filter .c {
     font-size: medium !important;
     font-weight: normal; }
   #mn-shop .checkmark {
-    text-align: center;
-    vertical-align: middle;
-    line-height: 1em; }
+    display: flex;
+    justify-content: center;
+    align-content: center; }
     #mn-shop .checkmark i {
-      color: whitesmoke;
-      visibility: hidden; }
+      color: white;
+      visibility: hidden;
+      transition: all .35s;
+      align-self: center; }
   #mn-shop .container-check input:checked ~ .checkmark i {
     visibility: visible; }
   #mn-shop .colors {
@@ -797,16 +793,19 @@ footer {
   #mn-shop .mob {
     position: sticky;
     top: 36px;
-    z-index: 90; }
+    z-index: 90;
+    height: 42.2px;
+    margin-bottom: 50px; }
   #mn-shop .filter-mob {
     height: 42.4px; }
-  #mn-shop .custom-select {
+  #mn-shop .mobdrop {
     border: none;
     font-weight: bold;
     cursor: pointer;
     background-color: #ea728c !important;
-    color: whitesmoke !important;
     height: 42.4px; }
+    #mn-shop .mobdrop .sort {
+      color: white; }
   #mn-shop .overly {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -821,8 +820,7 @@ footer {
     #mn-shop .overly .stick-top {
       padding-bottom: 320px; }
     #mn-shop .overly .title, #mn-shop .overly #mn-account h6, #mn-account #mn-shop .overly h6, #mn-shop .overly #mn-register h6, #mn-register #mn-shop .overly h6 {
-      color: #2a5592;
-      font-family: "Oxanium", cursive; }
+      color: #2a5592; }
     #mn-shop .overly .stick {
       top: 60px;
       max-height: calc(100vh);
@@ -849,7 +847,6 @@ footer {
   min-height: calc(100vh - 40px);
   color: #2a5592; }
   #mn-oneitem li {
-    font-family: "Oxanium", cursive;
     margin-bottom: 10px; }
   #mn-oneitem .photos {
     cursor: pointer; }
@@ -875,7 +872,7 @@ footer {
     z-index: 11000; }
     #mn-oneitem .overly img {
       border: 1px solid #132743; }
-  #mn-oneitem .information h6 {
+  #mn-oneitem .information h2 {
     color: #ea728c !important; }
 
 .colors span {
@@ -898,12 +895,6 @@ footer {
 .glide__slides img {
   height: 400px;
   width: 100vw; }
-
-.glide__slides a {
-  text-decoration: none; }
-
-.more button {
-  background-color: #ea728c !important; }
 
 .firstone img {
   height: calc(100vh - 36.4px); }
@@ -977,6 +968,8 @@ footer {
     color: #ea728c; }
 
 @media (max-width: 991px) {
+  footer h6 {
+    font-size: x-large; }
   h4 {
     font-size: 1.7rem; }
   h5 {

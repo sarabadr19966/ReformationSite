@@ -6,13 +6,13 @@
   &::-webkit-scrollbar {
     display: none ;
 
-}
-
+    }
     scrollbar-width: none;
+
    .stk{
   
        width: 245px;
-       height: fit-content;
+       height:245px;
        display: inline-block;
        cursor: pointer;
     
@@ -21,9 +21,8 @@
         position: relative;
         bottom: 72px;
         -webkit-font-smoothing: antialiased;
-        transition: opacity .35s;
-        opacity: 0;
-        
+        transition: all .35s;
+        opacity: 0;        
         }
         &:hover{
             .details{  

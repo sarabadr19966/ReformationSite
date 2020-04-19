@@ -12,33 +12,20 @@
             max-height: calc(100vh - 180px);  
             z-index: 50;
             overflow: auto;
-            
             -webkit-overflow-scrolling: touch;
-            scroll-margin-left: 20px;
-        padding-bottom: 10px;
-      }
-     
-        
-    
-     
-      h2{
-          padding: 0 !important;
+            padding-bottom: 10px;
       }
         button{
             color: lighten($color: $purple, $amount: 20) !important;
-
-            text-decoration: none;
             font-size: large;
             font-weight: bold;
-            font-family: $special-font;
-            padding: 0 !important;
 
     
         }
     
      .card{
             &:not(:last-of-type){
-            border-bottom: 1px solid $pink;
+            border-bottom: 1.1px solid $pink;
             }
 
          
@@ -57,13 +44,15 @@
         
     }
     .checkmark{
-        text-align: center;
-        vertical-align: middle;
-        line-height: 1em;
-        i{
-            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+           i{
+            color: white;
             visibility: hidden;
-        }
+            transition: all .35s;
+            align-self:center;
+            }
     }
     .container-check input:checked ~ .checkmark {
         i{
@@ -84,17 +73,21 @@
         .mob{
             position: sticky;
             top: 36px;
-            z-index: 90;         
+            z-index: 90;  
+            height: 42.2px;  
+            margin-bottom: 50px;     
         }
         .filter-mob{
             height: 42.4px;
         }
-        .custom-select{
+        .mobdrop{
             border: none;
             font-weight: bold;
             cursor: pointer;
             background-color: $pink !important;
-            color: whitesmoke !important;
+          .sort{
+              color: white;
+          }
             height: 42.4px;
         }
         .overly{
@@ -116,7 +109,6 @@
            
             .title{
                 color: lighten($color: $purple, $amount: 20);
-                font-family: $special-font;
     
             }
          .stick{

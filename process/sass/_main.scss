@@ -1,149 +1,148 @@
-html {
-    scroll-behavior: smooth;
-  }
-body{
-  font-family: $special-font;
-
-  margin: 0;
-  padding: 0;
-
-}  
-
-
-.b{
-  font-family: $special-font ;
-  font-weight: bold;
-  font-size: large;
-  color:$pink !important;
-  border: 2px solid $pink;
-}
-
-
-  h3{
-    color:whitesmoke;
+  html {
+      scroll-behavior: smooth;
+    }
+  body{
     font-family: $special-font;
+
+    margin: 0;
+    padding: 0;
+
+  }  
+
+
+  .b{
     font-weight: bold;
-    font-size: 4rem;
-}
-h4
-{
+    font-size: large;
+    color:$pink !important;
+    border: 2px solid $pink;
+  }
+
+
+    h3{
+      color:whitesmoke;
+      font-weight: bold;
+      font-size: 4rem;
+  }
+  h4
+  {
+      font-weight: bold;
+      color: lighten($color: $purple, $amount: 20);
+      font-size: 2rem;
+
+  }
+  h5
+  {
     font-weight: bold;
-    color: lighten($color: $purple, $amount: 20);
-    font-size: 2rem;
+  }
+  i{
+    color: $pink;
+  }
+  .line 
+  {
+    width: 80px;
+    height: 5px;
+    background-color:$pink;
+    margin: 0 auto;
+    position: relative;
 
-}
-h5
-{
-  font-weight: bold;
-}
-i{
-  color: $pink;
-}
-.line 
-{
-  width: 80px;
-  height: 5px;
-  background-color:$pink;
-  margin: 0 auto;
-  position: relative;
+  }
+  %backgroundImg
+  {
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover ;
+    
+  }
 
-}
-%backgroundImg
-{
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  background-size: cover ;
-}
+  .btn:focus,.btn:active ,.btn:hover,
+  .navbar-toggler:focus,.navbar-toggler:active,.navbar-toggle:hover,
+  .custom-select:hover,.custom-select:focus,.custom-select:active{
+    outline: none ;
+    box-shadow: none;
+    color: whitesmoke;
+  }
+  .form-control:focus{
+    border-color:$pink;
+    outline:0;
+    box-shadow:none;
+  }
 
-.btn:focus,.btn:active ,.btn:hover,
-.navbar-toggler:focus,.navbar-toggler:active,.navbar-toggle:hover,
-.custom-select:hover,.custom-select:focus,.custom-select:active{
-   outline: none ;
-   box-shadow: none;
-   color: whitesmoke;
- }
-.form-control:focus{
-  border-color:$pink;
-  outline:0;
-  box-shadow:none;
-}
 
-@mixin cf {
-	&:before,
-	&:after {
-		content: '';
-		display: table;
-	}
-
-	&:after {
-		clear: both;
-	}
-}
-.bun
+  .bun
     {  
         color: white !important;
         background-color: $pink;
         border: 2px solid $pink;
-        font-family: $special-font;
         font-weight: bold;
         font-size: large;
     }
-      
-      //remove arrows
-      input::-webkit-outer-spin-button,
-      input::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-      }
-      input[type=number] {
-      -moz-appearance: textfield;
-      }
-      .navv{
-        background-color: $purple !important;
-        margin: 0;
-        padding-top: 0 !important;
-        padding-bottom:0 !important;
-    }
-    .inc-dec{
-      width: 30px !important;
-      border: 1px solid $pink;
-      line-height: 2rem;
-      vertical-align: middle; 
-    }
-    .inc , .dec{
-      @extend .inc-dec;
-     
-      cursor: pointer;
-      &:hover
-      {
-        background-color: lighten($color: $pink, $amount: 5);
-      }
-    }
     
-    .form-control{
-      border-color: $pink;
+    //remove arrows in chrome
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
     }
-  /* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
+    //remove arrows in firefox
+    input[type=number] {
+    -moz-appearance: textfield;
+    }
 
 
+    // add background in other pages
+    .navv{
+      background-color: $purple !important;
+      margin: 0;
+      padding-top: 0 !important;
+      padding-bottom:0 !important;
+  }
+
+
+
+
+  .inc-dec{
+    width: 30px !important;
+    border: 1px solid $pink;
+   
+  }
+  .inc , .dec{
+    @extend .inc-dec;
+    
+    cursor: pointer;
+    &:hover
+    {
+      background-color: lighten($color: $pink, $amount: 5);
+    }
+  }
+  
+  .form-control{
+    border-color: $pink;
+  }
+
+
+// scrollbar style
+    /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+// modal for account
 .modal-backdrop {
     
     z-index: 90;
@@ -156,18 +155,15 @@ i{
         outline: 0;
     }
 }
-.fa-users{
-  cursor: pointer;
-}
+
 .modal-body{
-    font-family: $special-font;
     label{
         color: $pink;
         font-weight: normal;
     }
     a{
+      cursor: pointer;
        &.pass{
-        cursor: pointer;
         color: gray !important;
         &:hover{
           text-decoration: underline !important;

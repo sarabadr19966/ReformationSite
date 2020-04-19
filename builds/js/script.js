@@ -24,7 +24,7 @@ $('.navbar-toggler,.overlay').on('click',function(){
  // animate carousel caption
  $(".carousel-caption").addClass("animated slideInUp");
  
- //call stop animation function after 10s
+ //call stop animation function after 12s
  setTimeout(stopAnimation,12000,".carousel-caption","slideInUp");
 
  // chanfe the color of navbar on scrolling
@@ -73,8 +73,9 @@ $('.navbar-toggler,.overlay').on('click',function(){
     $('.title').html("Boswell Trouser");
     $('.price').html("EGP2,644.30");
     $('.colorechoosen').html("Ivory");
-    $('.colors').addClass('d-none');
     $('.soldone').toggleClass('sold')
+    $('.white,.black ').addClass('d-none')
+    $('.Ivory').removeClass('d-none')
 
     $('.modalcrs').carousel(0); 
      $('.Firstslide').attr("src","images/shlok.jpg");
@@ -90,9 +91,12 @@ $('.navbar-toggler,.overlay').on('click',function(){
 
 
    $('.so').click(function(){
+
+    $('.white,.black ').removeClass('d-none')
+    $('.Ivory').addClass('d-none')
     $('.chart').removeClass('clicked');
     $('.favv').html('Add To Favorite');
-   $('#sizeSelect').html("Add To Bag");
+    $('#sizeSelect').html("Add To Bag");
     $('.modalcrs').removeClass('slide'); 
     $('.title').html("Niko Blazer");
     $('.price').html("EGP3,116.50");
@@ -143,6 +147,8 @@ $('.navbar-toggler,.overlay').on('click',function(){
  {
       if(is_touch_device1()){
         $('.details').css({'opacity':'1' , 'background-color':'white' ,'bottom':'0px'});
+        $('.stk').css({'height':'317px'});
+
       }
  }
   if($('#deal-of-the-week') && $('#deal-of-the-week').length ){
@@ -374,7 +380,7 @@ if($('#one-item') && $('#one-item').length  ||$('#modallookshop') && $('#modallo
     })
    });
   }
-   if($('#one-item') && $('#one-item').length ){
+ if($('#one-item') && $('#one-item').length ){
   $('.flip').click(function(){
     $('.openClose',this).toggleClass('rotate');
     $('.openClose').not( $('.openClose',this)).removeClass('rotate');
@@ -581,24 +587,29 @@ function ParentOfParent(elem){
 }
 
 //inc & dec for bag items
-$('.inc').click(function()
-{
-  var p=ParentOfParent(this);
- var v= $ (`.${p} .inc-dec`).text();
+$('.inc').click(function(event)
+// to stop the dropdoen menu from closing on clicking in it
+{event.stopPropagation();
+  var p=$(this).parent();
+  var v=$(this).prev().text();
+
  ++v;
- $(`.${p} .inc-dec`).text(v);
+ $(this).prev().text(v);
 
 })
-$('.dec').click(function()
+$('.dec').click(function(event)
 {
-  var p=ParentOfParent(this);
- var v= $(`.${p} .inc-dec`).text();
+  event.stopPropagation();
+ var v=$(this).next().text();
  if (v != 1)
  {
   v--;
-  $(`.${p} .inc-dec`).text(v);
- }
+  $(this).next().text(v);
+}
 })
+
+
+//remove classes from contact /reurn /delvr / help
 function contacting(e)
 {
   $('.help').removeClass('help-clicked');
