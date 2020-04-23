@@ -1,7 +1,6 @@
 .mega-menu
 {
   position: static;
-
   left: 0;
   right: 0;
   top: 50px;
@@ -11,7 +10,7 @@
       font-size:xx-large;
       font-weight: bold;
       color:$purple;
-  }
+    }
 
 }
 
@@ -28,9 +27,10 @@
     span a{
         color: lighten($color: $purple, $amount: 20) !important;
     }
-    width:300px;
+   
+    width:350px;
     left:60%;
-    color:   lighten($color: $purple, $amount: 20);
+    color:lighten($color: $purple, $amount: 20);
     z-index: 2000;
     .row
     {
@@ -47,38 +47,37 @@
     
     .content
     {
-        height:56%;
+        height:300px;
         overflow-y: auto;
     }
-    }
-    .wish{
-        left: 50%;
-        .recent{
-            color: $pink !important;
-            &:hover{
-                text-decoration: none;
-            }
+}
+
+.wish{
+    left: 50%;
+    .recent{
+        color: $pink !important;
+        &:hover{
+            text-decoration: none;
         }
     }
+}
+
 .kids-page
 {
     background-image: url(../images/kids-page.webp);
     @extend %backgroundImg;
-     background-position: top center !important ;
+    background-position: top center !important ;
 
 }
 .womans-page
 {
-
     background-image: url(../images/womans-page.jpg);
     @extend %backgroundImg;
-
 }
+
 .men-page
 {
-
     background-image: url(../images/men-page.webp);
     @extend %backgroundImg;
-     background-position: top center !important;
-
+    background-position: top center !important;
 }

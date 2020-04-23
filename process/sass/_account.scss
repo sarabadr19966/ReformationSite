@@ -1,11 +1,11 @@
 #mn-account{
-    margin-top: 150px ;
     margin-bottom: 100px;
     min-height: calc(100vh - 40px);
     h6{
         @extend .title;
         font-size: xx-large;
     }
+    
    label{
        color: lighten($color:$purple, $amount: 20);
    }

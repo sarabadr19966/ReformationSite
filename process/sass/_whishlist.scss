@@ -19,120 +19,112 @@
     h5{
         color: $pink;
         font-size: xx-large;
-    }}
-    .item{
-        
-        &:hover{
-            
-        
-            .fav,.img11,.quick-add{
-                opacity: 1;
-            }
-            .img1{
-                opacity: 0;
-            }
-         
-        }
-        .fav{
-            position: absolute;
-            top: 10px;
-            right: 27px;
-            transition: all .5s;
-            opacity: 0;
-        }
-       .img11{
-        transition: all 1s;
-           opacity: 0;
-       }
-       .img1{
-           opacity: 1;
-           transition: all 1s;
-       }
+    }
+}
+.item{
     
-      
-
-        .quick-add{
-            overflow: hidden;
-            width: 70%;
-            height: 40px;
-            position: absolute;
-            bottom:120px;
-            left: 15%;
-            text-align: center;
-            transition: all  .5s ;
+    &:hover{
+        
+    
+        .fav,.img11,.quick-add{
+            opacity: 1;
+        }
+        .img1{
             opacity: 0;
-            background-color: $pink;
-            .size{
-                span{
-                    padding: 5px;
-                    color: lighten($color: whitesmoke, $amount: 20);
-                    &:hover{
-                        border: 1px solid whitesmoke;
-                    }
+        }
+        
+    }
+    .fav{
+        position: absolute;
+        top: 10px;
+        right: 27px;
+        transition: all .5s;
+        opacity: 0;
+    }
+    .img11{
+        transition: all 1s;
+        opacity: 0;
+    }
+    .img1{
+        opacity: 1;
+        transition: all 1s;
+    }
+
+    
+
+    .quick-add{
+        overflow: hidden;
+        width: 70%;
+        height: 40px;
+        position: absolute;
+        bottom:120px;
+        left: 15%;
+        text-align: center;
+        transition: all  .5s ;
+        opacity: 0;
+        background-color: $pink;
+        .size{
+            span{
+                cursor: pointer;
+                padding: 5px;
+                color: lighten($color: white, $amount: 20);
+                &:hover{
+                    border: 1px solid white;
                 }
-               opacity: 0;
-               transition: all .5s;
             }
-            .q1{
-                color: lighten($color: whitesmoke, $amount: 20);
-                font-weight: bold;
-              
-                    }
-                 
+            opacity: 0;
+            transition: all .5s;
+        }
+        .q1{
+            color: lighten($color: white, $amount: 20);
+            font-weight: bold;
             
-             &:hover{
-                 cursor: pointer;
-
-                 height: 80px;
-                .size{
-                    opacity: 1;
-                }
-
-                }    
         }
                 
+    
+        &:hover{
 
-    }
-    .sold{
-        text-decoration: line-through;
-    }
-    .colors{
+            height: 80px;
+            .size{
+                opacity: 1;
+            }
 
-        span{
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-         
-        }
-            .navy
-            {
-                background-color: navy;
-            }
-            .vintagewhite
-            {
-                background-color:#eff1f1;
-            }
-            .red-flowry{
-                background-image: url(../images/redflowry.jpg);
-            }
-            .blue-flowry{
-                background-image: url(../images/blueflowry.jpg);
-            }
-        }
-             .custom-select{
-            border-color: $pink !important;
-            background: none !important;
-            color: $pink !important;
-            background-color: transparent;
+        }    
+    }
             
-            text-align: center;
-            text-align-last: center;
-          
-        }
-        .clr{
-            cursor: pointer;
-        }
- 
+
+}
+.sold{
+    text-decoration: line-through;
+}
+.colors{
+
+    span{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        
+    }
+    .navy
+    {
+        background-color: navy;
+    }
+    .vintagewhite
+    {
+        background-color:#eff1f1;
+    }
+    .red-flowry{
+        background-image: url(../images/redflowry.jpg);
+    }
+    .blue-flowry{
+        background-image: url(../images/blueflowry.jpg);
+    }
+}
+
+.clr{
+    cursor: pointer;
+}
+
   
    
      

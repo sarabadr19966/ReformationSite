@@ -10,7 +10,7 @@ margin-bottom: 80px;
     p
     {
         font-weight: normal;
-        color: gray;
+        color: lighten($color: $purple, $amount: 20);
         font-size: large;
     }
 }

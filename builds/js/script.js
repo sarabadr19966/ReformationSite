@@ -4,22 +4,23 @@ $("document").ready(function(){
   tax=974.46 ;
   carttotal=0;
   promo=allTotal*.00;
-  pink='#ea728c';
 
-//search box
-$('.search-toggle').on('click', function() {
-  $("#header-1").toggleClass('show').find('.search-input').focus();
-  $(this).toggleClass('active');
+  //search box
+  $('.search-toggle').on('click', function() {
+    $("#header-1").toggleClass('show').find('.search-input').focus();
+    $(this).toggleClass('active');
 
-});
-$('.mycarousel').carousel({
-  interval: 4000,
-  pause:false
-});
+  });
 
-$('.navbar-toggler,.overlay').on('click',function(){
-  $('.mobileMenu,.overlay').toggleClass('open');
-})
+  $('.mycarousel').carousel({
+    interval: 4000,
+    pause:false
+  });
+  
+     //for mobile nav
+  $('.navbar-toggler,.overlay').on('click',function(){
+    $('.mobileMenu,.overlay').toggleClass('open');
+  })
 
  // animate carousel caption
  $(".carousel-caption").addClass("animated slideInUp");
@@ -27,130 +28,132 @@ $('.navbar-toggler,.overlay').on('click',function(){
  //call stop animation function after 12s
  setTimeout(stopAnimation,12000,".carousel-caption","slideInUp");
 
- // chanfe the color of navbar on scrolling
-   myNav = $(".my-nav");
-  myNav.toggleClass('nav1', $(this).scrollTop() > myNav.height());
+  // what to do ontouch screen
+  if(is_touch_device1()){
+    $(".shop").removeClass("shop-desk");
+    $(".type").removeClass("type-desk");
+    $("footer").addClass("ftr");      
+  }
 
 
-    // what to do ontouch screen
-    if(is_touch_device1()){
-      $(".shop").removeClass("shop-desk");
-      $(".type").removeClass("type-desk");
-      $("footer").addClass("ftr");      
-      }
-
-
-    //make the dropdown trigger by hovering 
-    $('.my-nav li.dropdown').hover(function() {
-    $('.dropdown-menu',this).stop(true, true).delay(100).fadeIn(500);
-      }, function() {
-        $('.dropdown-menu',this).stop(true, true).delay(100).fadeOut(500);
-      });
+  //make the dropdown trigger by hovering and add animation
+  $('.my-nav li.dropdown').hover(function() {
+  $('.dropdown-menu',this).stop(true, true).delay(100).fadeIn(500);
+    }, function() {
+      $('.dropdown-menu',this).stop(true, true).delay(100).fadeOut(500);
+  });
             
 
-    //change color of nav while scrolling
- if($('#home') && $('#home').length ){
-  $(document).scroll(function ()
-  {
+  //change color of nav while scrolling
+  if($('#home') && $('#home').length ){
+    // add color when refresh & not at the top
+    myNav = $(".my-nav");
     myNav.toggleClass('nav1', $(this).scrollTop() > myNav.height());
- });
- }  
- if($('#buyoutfit') && $('#buyoutfit').length){
-  if(is_touch_device1()){
-  $('.shoplook').removeClass('shoplookdesk');
+      $(document).scroll(function ()
+      {  
+     
+        myNav.toggleClass('nav1', $(this).scrollTop() > myNav.height());
+      });
+  }  
 
- }}
- if($('#modallookshop') && $('#modallookshop').length){
+
+  if($('#buyoutfit') && $('#buyoutfit').length){
+    if(is_touch_device1()){
+    $('.shoplook').removeClass('shoplookdesk');
+
+  }}
+
+  if($('#modallookshop') && $('#modallookshop').length){
 
       $('.modalcrs').carousel({
         interval: false,
       })
-   $('.fo').click(function(){
-    $('.chart').removeClass('clicked');
-    $('.favv').html('Add To Favorite');
-   $('#sizeSelect').html("Add To Bag");
-    $('.modalcrs').removeClass('slide'); 
-    $('.title').html("Boswell Trouser");
-    $('.price').html("EGP2,644.30");
-    $('.colorechoosen').html("Ivory");
-    $('.soldone').toggleClass('sold')
-    $('.white,.black ').addClass('d-none')
-    $('.Ivory').removeClass('d-none')
+    $('.fo').click(function(){
+      $('.chart').removeClass('clicked');
+      $('.favv').html('Add To Favorite');
+    $('#sizeSelect').html("Add To Bag");
+      $('.modalcrs').removeClass('slide'); 
+      $('.title').html("Boswell Trouser");
+      $('.price').html("EGP2,644.30");
+      $('.colorechoosen').html("Ivory");
+      $('.soldone').toggleClass('sold')
+      $('.white,.black ').addClass('d-none')
+      $('.Ivory').removeClass('d-none')
 
-    $('.modalcrs').carousel(0); 
-     $('.Firstslide').attr("src","images/shlok.jpg");
-        $('.Secondslide').attr("src","images/shlok1.jpg");
-        $('.Thirdslide').attr("src","images/shlok12.jpg");
-        $('.Fourthslide').attr("src","images/shlok13.jpg");
-        $('.modalcrs').carousel(0); 
+      $('.modalcrs').carousel(0); 
+      $('.Firstslide').attr("src","images/shlok.jpg");
+          $('.Secondslide').attr("src","images/shlok1.jpg");
+          $('.Thirdslide').attr("src","images/shlok12.jpg");
+          $('.Fourthslide').attr("src","images/shlok13.jpg");
+          $('.modalcrs').carousel(0); 
+          $('.modalcrs').addClass('slide'); 
+
+
+
+    }) 
+
+
+    $('.so').click(function(){
+
+      $('.white,.black ').removeClass('d-none')
+      $('.Ivory').addClass('d-none')
+      $('.chart').removeClass('clicked');
+      $('.favv').html('Add To Favorite');
+      $('#sizeSelect').html("Add To Bag");
+      $('.modalcrs').removeClass('slide'); 
+      $('.title').html("Niko Blazer");
+      $('.price').html("EGP3,116.50");
+      $('.colorechoosen').html("White");
+      $('.colors').removeClass('d-none');
+      $('.soldone').toggleClass('sold disabled')
+
+      $('.modalcrs').carousel(0); 
+      $('.Firstslide').attr("src","images/shlok2.jpg");
+      $('.Secondslide').attr("src","images/shlok21.jpg");
+      $('.Thirdslide').attr("src","images/shlok22.jpg");
+      $('.Fourthslide').attr("src","images/shlok23.jpg");
         $('.modalcrs').addClass('slide'); 
 
 
 
-   }) 
+  });
+    $('.black').click(function(){
+      $('.modalcrs').removeClass('slide');
+      $('.soldone').toggleClass('sold')
 
-
-   $('.so').click(function(){
-
-    $('.white,.black ').removeClass('d-none')
-    $('.Ivory').addClass('d-none')
-    $('.chart').removeClass('clicked');
-    $('.favv').html('Add To Favorite');
-    $('#sizeSelect').html("Add To Bag");
-    $('.modalcrs').removeClass('slide'); 
-    $('.title').html("Niko Blazer");
-    $('.price').html("EGP3,116.50");
-    $('.colorechoosen').html("White");
-    $('.colors').removeClass('d-none');
-    $('.soldone').toggleClass('sold disabled')
-
-    $('.modalcrs').carousel(0); 
-    $('.Firstslide').attr("src","images/shlok2.jpg");
-    $('.Secondslide').attr("src","images/shlok21.jpg");
-    $('.Thirdslide').attr("src","images/shlok22.jpg");
-    $('.Fourthslide').attr("src","images/shlok23.jpg");
+      $('.colorechoosen').html("Black");
+      $('.modalcrs').carousel(0); 
+      $('.Firstslide').attr("src","images/shlok2b.jpg");
+      $('.Secondslide').attr("src","images/shlok21b.jpg");
+      $('.Thirdslide').attr("src","images/shlok22b.jpg");
+      $('.Fourthslide').attr("src","images/shlok32b.jpg");
+      $('.modalcrs').carousel(0); 
       $('.modalcrs').addClass('slide'); 
+      $('.white').click(function(){
+        $('.colorechoosen').html("White");
+        $('.modalcrs').removeClass('slide'); 
+        $('.modalcrs').carousel(0); 
+        $('.Firstslide').attr("src","images/shlok2.jpg");
+        $('.Secondslide').attr("src","images/shlok21.jpg");
+        $('.Thirdslide').attr("src","images/shlok22.jpg");
+        $('.Fourthslide').attr("src","images/shlok23.jpg");
+        $('.modalcrs').carousel(0); 
+        $('.modalcrs').addClass('slide'); 
+      })
+    })
 
 
+  }
 
-});
-   $('.black').click(function(){
-    $('.modalcrs').removeClass('slide');
-    $('.soldone').toggleClass('sold')
+  if ($('.stocking') && $( ".stocking" ).length )
+  {
+        if(is_touch_device1()){
+          $('.details').css({'opacity':'1' , 'background-color':'white' ,'bottom':'0px'});
+          $('.stk').css({'height':'317px'});
 
-    $('.colorechoosen').html("Black");
-    $('.modalcrs').carousel(0); 
-    $('.Firstslide').attr("src","images/shlok2b.jpg");
-    $('.Secondslide').attr("src","images/shlok21b.jpg");
-    $('.Thirdslide').attr("src","images/shlok22b.jpg");
-    $('.Fourthslide').attr("src","images/shlok32b.jpg");
-    $('.modalcrs').carousel(0); 
-    $('.modalcrs').addClass('slide'); 
-   })
-   $('.white').click(function(){
-    $('.colorechoosen').html("White");
-    $('.modalcrs').removeClass('slide'); 
-    $('.modalcrs').carousel(0); 
-    $('.Firstslide').attr("src","images/shlok2.jpg");
-    $('.Secondslide').attr("src","images/shlok21.jpg");
-    $('.Thirdslide').attr("src","images/shlok22.jpg");
-    $('.Fourthslide').attr("src","images/shlok23.jpg");
-    $('.modalcrs').carousel(0); 
-    $('.modalcrs').addClass('slide'); 
+        }
+  }
 
-   })
-
- }
-
- 
- if ($('.stocking') && $( ".stocking" ).length )
- {
-      if(is_touch_device1()){
-        $('.details').css({'opacity':'1' , 'background-color':'white' ,'bottom':'0px'});
-        $('.stk').css({'height':'317px'});
-
-      }
- }
   if($('#deal-of-the-week') && $('#deal-of-the-week').length ){
      // creating countdown for deal 
   var endDate=new Date("Dec 15, 2020 12:00:00").getTime();
@@ -270,279 +273,264 @@ $('.navbar-toggler,.overlay').on('click',function(){
   }
 }
 
-// cart stuff
-if($('#cart') && $('#cart').length){
-  totalPrice("item1");
-  totalPrice("item2");
-  carttotal=allTotal-promo;
-  $('.cart-total').text(carttotal.toFixed(2));
-  $('.promo').click(function()
-  { 
-    $('.pr').toggleClass('rotate');
-    $('.prm').toggleClass('d-none'); 
-  })
+  // cart stuff
+  if($('#cart') && $('#cart').length){
+    totalPrice("item1");
+    totalPrice("item2");
+    carttotal=allTotal-promo;
+    $('.cart-total').text(carttotal.toFixed(2));
+    $('.promo').click(function()
+    { 
+      $('.pr').toggleClass('rotate');
+      $('.prm').toggleClass('d-none'); 
+    })
 
-}
+  }
 
-if($('#mn-shop') &&  $('#mn-shop').length)
-{
+  if($('#mn-shop') &&  $('#mn-shop').length)
+  {
 
-  $('.flip').click(function(){
-    $('.openClose',this).toggleClass('rotate');
-    $('.openClose').not( $('.openClose',this)).removeClass('rotate');
+    $('.flip').click(function(){
+      $('.openClose',this).toggleClass('rotate');
+      $('.openClose').not( $('.openClose',this)).removeClass('rotate');
 
-  })
-   
-  $('.c ').click(function(){
-   
-    $(".opcl",this).toggleClass('fa-plus fa-minus');
-    $('.opcl ').not( $('.opcl',this)).removeClass('fa-minus').addClass('fa-plus');
-
+    })
     
-  })
+    $('.c ').click(function(){
+    
+      $(".opcl",this).toggleClass('fa-plus fa-minus');
+      $('.opcl ').not( $('.opcl',this)).removeClass('fa-minus').addClass('fa-plus');
+    })
 
-  $('.filter-mob').click(function(){
-    $('.overly').removeClass('d-none');
-    // When the modal is shown, we want a fixed body
-document.body.style.position = 'fixed';
+    $('.filter-mob').click(function(){
+      $('.overly').removeClass('d-none');
+      // When the modal is shown, we want a fixed body
+      document.body.style.position = 'fixed';
+    })
 
-
-  })
-  $('.closing').click(function(){
-    $('.overly').addClass('d-none');
-    document.body.style.position = 'static';
-
-
-  })
-     
-}
+    $('.closing').click(function(){
+      $('.overly').addClass('d-none');
+      document.body.style.position = 'static';
+    })
+      
+  }
 
 
 
 
-if($('#checkout') && $('#checkout').length)
-{
-  totalPrice("item1");
-  totalPrice("item2");
-  $('[data-toggle="tooltip"]').tooltip();
+  if($('#checkout') && $('#checkout').length)
+  {
+    totalPrice("item1");
+    totalPrice("item2");
+    $('[data-toggle="tooltip"]').tooltip();
 
-$('input:radio[name=address]').change(
-    function(){
-        if ($(this).is(':checked') && $(this).val() == 'no') {
-          $('.altr').removeClass("d-none");
-        }
-        else if ($(this).is(':checked') && $(this).val() == 'yes') {
-          $('.altr').addClass("d-none");
-        }
-    });
-    $('input:radio[name=tax]').change(
+  $('input:radio[name=address]').change(
       function(){
-          if ($(this).is(':checked') && $(this).val() == 'yes') {
-            allpay=allTotal+tax;
-            $('.all-pay').text(allpay.toFixed(2));
-            $('.tax').removeClass('d-none');
-            $('.taxnot').addClass('d-none');
-            $('.note').text("All applicable duties, taxes and fees are included in the total amount of your order. We guarantee you will not be required to pay any additional cost on delivery.");
-
+          if ($(this).is(':checked') && $(this).val() == 'no') {
+            $('.altr').removeClass("d-none");
           }
-          else if ($(this).is(':checked') && $(this).val() == 'no') {
-            $('.all-pay').text(allTotal.toFixed(2));
-            $('.tax').addClass('d-none');
-            $('.taxnot').removeClass('d-none');
-            $('.note').text("Please note duties and taxes were not prepaid. Should there be any applicable charges, you will be required to pay them upon delivery")
+          else if ($(this).is(':checked') && $(this).val() == 'yes') {
+            $('.altr').addClass("d-none");
           }
       });
+      $('input:radio[name=tax]').change(
+        function(){
+            if ($(this).is(':checked') && $(this).val() == 'yes') {
+              allpay=allTotal+tax;
+              $('.all-pay').text(allpay.toFixed(2));
+              $('.tax').removeClass('d-none');
+              $('.taxnot').addClass('d-none');
+              $('.note').text("All applicable duties, taxes and fees are included in the total amount of your order. We guarantee you will not be required to pay any additional cost on delivery.");
+
+            }
+            else if ($(this).is(':checked') && $(this).val() == 'no') {
+              $('.all-pay').text(allTotal.toFixed(2));
+              $('.tax').addClass('d-none');
+              $('.taxnot').removeClass('d-none');
+              $('.note').text("Please note duties and taxes were not prepaid. Should there be any applicable charges, you will be required to pay them upon delivery")
+            }
+        });
   }
 
-})
 
-if($('#one-item') && $('#one-item').length  ||$('#modallookshop') && $('#modallookshop').length)
+  if($('#one-item') && $('#one-item').length  ||$('#modallookshop') && $('#modallookshop').length)
 
-{
-  $('.chart').click(function(){
-     $('.chart').removeClass('clicked');
-     $(this).addClass('clicked');
-     $('.favv').html('Add To Favorite');
-    $('#sizeSelect').html("Add To Bag");
-    $('.favv').click(function(){
-      $(this).html("Favorited");
-     });
-     $('#sizeSelect').click(function(){
-      $(this).html("Added");
+  {
+    $('.chart').click(function(){
+      $('.chart').removeClass('clicked');
+      $(this).addClass('clicked');
+      $('.favv').html('Add To Favorite');
+      $('#sizeSelect').html("Add To Bag");
+      $('.favv').click(function(){
+        $(this).html("Favorited");
+      });
+      $('#sizeSelect').click(function(){
+        $(this).html("Added");
 
-     })
-   });
-   
-  $('.sold').click(function(){
-    $('#sizeSelect').html("Join The Wait List");
-    $('#sizeSelect').click(function(){
-     $(this).html('Joined') 
-    })
-   });
-  }
- if($('#one-item') && $('#one-item').length ){
-  $('.flip').click(function(){
-    $('.openClose',this).toggleClass('rotate');
-    $('.openClose').not( $('.openClose',this)).removeClass('rotate');
-
-  })
-  $('.red-flowry').click(function(){
-    $('.first-color').addClass('d-none');
-    $('.second-color').removeClass('d-none');
-  var src=  $('.second-color .first').attr('src');
-  $('.main-photo img').attr('src',src);
-  $('.overly').css('background-image', 'url(../'+src+')');
-  $('#zoom_01').data('zoom-image',src).elevateZoom({
-    zoomType: "inner",
-    cursor: 'crosshair',
-    zoomWindowFadeIn: 500,
-    zoomWindowFadeOut: 750,
-    scrollZoom:true
-}); ;
-
+      })
+    });
     
-  })
-  $('.blue-flowry').click(function(){
-    $('.first-color').removeClass('d-none');
-    $('.second-color').addClass('d-none');
-    var src=  $('.first-color .first').attr('src');
-    $('.main-photo img').attr('src',src);
-    $('.overly').css('background-image', 'url(../'+src+')');
+    $('.sold').click(function(){
+      $('#sizeSelect').html("Join The Wait List");
+      $('#sizeSelect').click(function(){
+      $(this).html('Joined') 
+      })
+    });
+  }
 
-    $('#zoom_01').data('zoom-image',src).elevateZoom({
+
+  if($('#one-item') && $('#one-item').length ){
+    $('.zoomarrow').click(function(){
+      $('.fulldesk').removeClass("d-none");
+      var src= $('.main-photo img').attr("src");
+      $('.img').html(`<img class="img-fluid" src=${src}>`)
+      document.body.style.position = 'fixed';
+    })
+    $('.fulldesk .closing').click(function(){
+      $('.fulldesk').addClass('d-none');
+      document.body.style.position = 'static';
+    })
+    $('.flip').click(function(){
+      $('.openClose',this).toggleClass('rotate');
+      $('.openClose').not( $('.openClose',this)).removeClass('rotate');
+
+    })
+    $('.red-flowry').click(function(){
+      $('.first-color').addClass('d-none');
+      $('.second-color').removeClass('d-none');
+      var src=  $('.second-color .first').attr('src');
+      $('.main-photo img').attr('src',src);
+      $('#zoom_01').data('zoom-image',src).elevateZoom({
+        zoomType: "inner",
+        cursor: 'crosshair',
+        zoomWindowFadeIn: 500,
+        zoomWindowFadeOut: 750,
+        scrollZoom:true
+      }); ;
+
+      
+    })
+    $('.blue-flowry').click(function(){
+      $('.first-color').removeClass('d-none');
+      $('.second-color').addClass('d-none');
+      var src=  $('.first-color .first').attr('src');
+      $('.main-photo img').attr('src',src);
+      $('#zoom_01').data('zoom-image',src).elevateZoom({
+        zoomType: "inner",
+        cursor: 'crosshair',
+        zoomWindowFadeIn: 500,
+        zoomWindowFadeOut: 750,
+        scrollZoom:true
+      }); ;
+      
+    })
+
+
+// img of dess in mob    
+  var glide= new Glide('.glide', {
+      type: 'carousel',
+      startAt: 0,
+      animationTimingFunc:"ease",
+      animationDuration:1000,
+      autoplay:3000,
+      swipeThreshold: 60,
+      perView: 1,
+
+    }
+      ).mount()
+
+    if(!is_touch_device1()){
+
+    $('#zoom_01').elevateZoom({
       zoomType: "inner",
       cursor: 'crosshair',
       zoomWindowFadeIn: 500,
       zoomWindowFadeOut: 750,
       scrollZoom:true
-  }); ;
+  }); 
+    $('.photos img').hover(function(){
     
-  })
+    var src= $(this).attr("src");
+    $('.main-photo img').attr("src",src);
+    $('#zoom_01').data('zoom-image',src).elevateZoom({
+      zoomType: "inner",
+      cursor: 'crosshair',
+      zoomWindowFadeIn: 500,
+      zoomWindowFadeOut: 750,
+      scrollZoo:true
+  }); ;
 
+    })
+    $(".item ").hover(function(){
+      $(`.img1`,this).toggleClass("d-none");
+      $(`.img11`,this).toggleClass("d-none"); 
+    })
+  }
+    else{
+      $('.photos img').click(function(){
+    
+        var src= $(this).attr("src");
+        $('.main-photo img').attr("src",src);
+    });
+
+      $('.red-flowry').click(function(){
+        $('.firstone img').each(function(){
+          var src= $(this).attr('src').slice(0,15);
+          src=`${src}2.jpg`;
+          $(this).attr('src',src)
+        })
+        glide.update({ startAt: 0})
+
+  })
+  $('.blue-flowry').click(function(){
+    $('.firstone img').each(function(){
+      var src= $(this).attr('src').slice(0,15);
+      src=`${src}.jpg`;
+      $(this).attr('src',src)
+    })
+    glide.update({ startAt: 0})
+
+  })
+  }
+  }
+  
+  if($('#mn-contact') && $('#mn-contact').length){
+    $('.flip').click(function(){
+      $('.openClose',this).toggleClass('rotate');
+      $('.openClose').not( $('.openClose',this)).removeClass('rotate');
+
+    })
+    $('.Questioning').click(function(){
+      contacting($(this));
+      $('.Qs').removeClass('d-none');
+    });
+    $('.Deliveringorders').click(function(){
+      contacting($(this));
+      $('.DO').removeClass('d-none');
+    });
+    $('.Producting').click(function(){
+      contacting($(this));
+      $('.Pr').removeClass('d-none');
+    });
+
+    $('.returningfunding').click(function(){
+      contacting($(this));
+      $('.RR').removeClass('d-none');
+    });
 
   
- var glide= new Glide('.glide', {
-    type: 'carousel',
-    startAt: 0,
-    animationTimingFunc:"ease",
-    animationDuration:1000,
-    autoplay:3000,
-    swipeThreshold: 60,
-    perView: 1,
-
-   }
-    ).mount()
-
-  if(!is_touch_device1()){
-  $('#zoom_01').elevateZoom({
-    zoomType: "inner",
-    cursor: 'crosshair',
-    zoomWindowFadeIn: 500,
-    zoomWindowFadeOut: 750,
-    scrollZoom:true
-}); 
-  $('.photos img').hover(function(){
-   
-   var src= $(this).attr("src");
-   $('.main-photo img').attr("src",src);
-   $('#zoom_01').data('zoom-image',src).elevateZoom({
-    zoomType: "inner",
-    cursor: 'crosshair',
-    zoomWindowFadeIn: 500,
-    zoomWindowFadeOut: 750,
-    scrollZoo:true
-}); ;
-
-  })
-  $(".item ").hover(function(){
-    $(`.img1`,this).toggleClass("d-none");
-    $(`.img11`,this).toggleClass("d-none"); 
-  })
-}
-  else{
-    $('.photos img').click(function(){
-   
-      var src= $(this).attr("src");
-      $('.main-photo img').attr("src",src);
-  });
-  $('.main-photo img').click(function(){
-    var sr=$(this).attr("src");
-    $('.overly').removeClass('d-none');
-    $('.overly').css('background-image', 'url(../'+sr+')');
-    document.body.style.position = 'fixed';
-
-  })
-  $('.overly img').click(function(){
-    var sr=$(this).attr("src");
-    $('.overly').css('background-image', 'url(../'+sr+')');
-  })
-  $('.overly .closing').click(function(){
-    $('.overly').addClass('d-none');
-    document.body.style.position = 'static';
-
-
-  })
-    $('.red-flowry').click(function(){
-      $('.firstone img').each(function(){
-
-        var src= $(this).attr('src');
-        src=src.slice(0,15);
-        src=`${src}2.jpg`;
-        $(this).attr('src',src)
-      
-      })
-      glide.update({ startAt: 0})
+    $('.contact-us').click(function(){
+      contacting($(this));
+      $('.contactus').removeClass('d-none')
+    });
+  }
 
 })
-$('.blue-flowry').click(function(){
-  $('.firstone img').each(function(){
-
-    var src= $(this).attr('src');
-    src=src.slice(0,15);
-    src=`${src}.jpg`;
-    $(this).attr('src',src)
-  
-  })
-  glide.update({ startAt: 0})
-
-})
-}
-}
-if($('#mn-contact') && $('#mn-contact').length){
-  $('.flip').click(function(){
-    $('.openClose',this).toggleClass('rotate');
-    $('.openClose').not( $('.openClose',this)).removeClass('rotate');
-
-  })
-  $('.Questioning').click(function(){
-    contacting($(this));
-    $('.Qs').removeClass('d-none');
-  });
-  $('.Deliveringorders').click(function(){
-    contacting($(this));
-    $('.DO').removeClass('d-none');
-  });
-  $('.Producting').click(function(){
-    contacting($(this));
-    $('.Pr').removeClass('d-none');
-  });
-
-  $('.returningfunding').click(function(){
-    contacting($(this));
-    $('.RR').removeClass('d-none');
-  });
-
- 
-  $('.contact-us').click(function(){
-    contacting($(this));
-    $('.contactus').removeClass('d-none')
-  });
-}
 
 //stop animation function
 function stopAnimation(ele,cls)
 {
-   $(ele).removeClass(cls); 
+  $(ele).removeClass(cls); 
 }
 
 //to know if im in touch device
@@ -551,16 +539,13 @@ function is_touch_device1() {
   
 }
 
-
-
-
+// formob nav 
 const navExpand = [].slice.call(document.querySelectorAll('.nav-expand'))
 const backLink = `<li class="nav-item">
 	<a class="nav-link nav-back-link" href="javascript:;">
   <i class="fas fa-chevron-left mr-1 mt-2"></i>	Back
 	</a>
 </li>`
-
 navExpand.forEach(item => {
 	item.querySelector('.nav-expand-content').insertAdjacentHTML('afterbegin', backLink)
 	item.querySelector('.nav-link').addEventListener('click', () => item.classList.add('active'))
@@ -580,6 +565,7 @@ function totalPrice(parent)
   $('.all-total').text(allTotal.toFixed(2));
   $('.all-pay').text(allTotal.toFixed(2));
 }
+
 function ParentOfParent(elem){
   var p=$(elem).parent();
   p=p.parent().get( 0 ).classList[0];
@@ -590,13 +576,13 @@ function ParentOfParent(elem){
 $('.inc').click(function(event)
 // to stop the dropdoen menu from closing on clicking in it
 {event.stopPropagation();
-  var p=$(this).parent();
   var v=$(this).prev().text();
 
  ++v;
  $(this).prev().text(v);
 
 })
+
 $('.dec').click(function(event)
 {
   event.stopPropagation();
@@ -607,7 +593,6 @@ $('.dec').click(function(event)
   $(this).next().text(v);
 }
 })
-
 
 //remove classes from contact /reurn /delvr / help
 function contacting(e)

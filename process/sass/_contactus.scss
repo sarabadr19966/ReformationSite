@@ -1,38 +1,40 @@
 #mn-contact{
     margin-top: 120px;
-min-height: calc(100vh - 40px);
-color: lighten($color: $purple, $amount: 20);
-.cls{
-    cursor: pointer;
-    padding: 10px;
-    box-shadow: 5px 5px 5px 5px #888888;
-}
+    min-height: calc(100vh - 40px);
+    color: lighten($color: $purple, $amount: 20);
+    .cls{
+        cursor: pointer;
+        padding: 10px;
+        box-shadow: 5px 5px 5px 5px #888888;
+    }
 
-.mainbox{
-  
-    .title{
-        color: white;
-        background-color: $pink;
-        text-align: center;
-    }
-  
-}
-.dif{
-    font-weight: bold;
-    font-size: larger;
-}
-.help{
-    h6{
-        font-size: x-large;
-        &:hover{
-            text-decoration: underline;
+    .mainbox{
+        .title{
+            color: white;
+            background-color: $pink;
+            text-align: center;
         }
-        i{
-            color: $pink;
+    
+    }
+
+    .dif{
+        font-weight: bold;
+        font-size:medium;
+    }
+
+    .help{
+        h6{
+            font-size: x-large;
+            &:hover{
+                text-decoration: underline;
+            }
+            i{
+                color: $pink;
+            }
         }
+    
     }
-  
-    }
+
     .help-clicked{
         color: white;
         background-color: $purple;
@@ -43,6 +45,7 @@ color: lighten($color: $purple, $amount: 20);
             text-decoration: none;
         }
     }
+
     .ans{
         .title{
             color: $pink ;
@@ -51,33 +54,34 @@ color: lighten($color: $purple, $amount: 20);
         a{
             color: $pink;
         }
-  
-}
-.contactus{
-
-    a{
-        i{
-            color: white;
-        }
-    }
-}
-
-
-#mob-accordion{
-    .btn-link{
-        text-decoration: none !important;
-    }
-    span.title{
-        font-size: x-large !important;
-        color: lighten($color: $purple, $amount: 20);
     
     }
-    .card-header{
-        padding: 0;
+
+    .contactus{
+
+        a{
+            i{
+                color: white;
+            }
+        }
     }
-    a{
-        color: $pink;
+
+
+    #mob-accordion{
+        .btn-link{
+            text-decoration: none !important;
+        }
+        span.title{
+            font-size: x-large !important;
+            color: lighten($color: $purple, $amount: 20);
+        
+        }
+        .card-header{
+            padding: 0;
+        }
+        a{
+            color: $pink;
+        }
     }
-}
 
 }

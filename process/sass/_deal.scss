@@ -1,47 +1,49 @@
-#deal-of-the-week
-{    background-image: url(../images/deal_ofthe_week.png);
+#deal-of-the-week{   
+    background-image: url(../images/deal_ofthe_week.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-color:rgb(233, 231, 233);
     margin-bottom: 100px;
     height: 630px;
-h4 {
-position: relative;
-top: 150px;
-color: white;
-}
 
-.line{
- 
-    background-color: $light-pink !important;
-    top: 155px;
-}
-.time
-{width: 60px;
-    height: 60px;
-    font-weight: bold;
-    color: white;
-    background-color: $light-pink;
-    border:3px solid white;
-    border-radius: 2px;
-    margin-right: 5px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 2px;
-    cursor: default;
-}
-.shop
-{
-    background-color:$light-pink;
-    border-color:white;
-    border-width: 4px;
-    color: white;
-    font-weight: bold;
-    font-size: larger;
-    position: relative;
-    top: 380px;
-    width: 250px;
-    transition: width .4s; 
+    h4 {
+        position: relative;
+        top: 150px;
+        color: white;
+    }
 
-}
+    .line{
+        background-color: $light-pink !important;
+        top: 155px;
+    }
+
+    .time{
+        width: 60px;
+        height: 60px;
+        font-weight: bold;
+        color: white;
+        background-color: $light-pink;
+        border:3px solid white;
+        border-radius: 2px;
+        margin-right: 5px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 2px;
+        cursor: default;
+    }
+    
+    .shop
+    {
+        background-color:$light-pink;
+        border-color:white;
+        border-width: 4px;
+        color: white;
+        font-weight: bold;
+        font-size: larger;
+        position: relative;
+        top: 380px;
+        width: 250px;
+        transition: width .4s; 
+
+    }
 }

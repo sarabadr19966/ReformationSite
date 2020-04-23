@@ -1,15 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald|Oxanium&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
 .my-nav {
-  font-family: "Oxanium", cursive;
-  font-weight: bold;
-  font-size: large; }
-
-.my-nav {
   transition: all .5s;
   margin: 0;
   padding-top: 0 !important;
-  padding-bottom: 0 !important; }
+  padding-bottom: 0 !important;
+  font-weight: bold;
+  font-size: large; }
   .my-nav li a {
     color: white !important;
     cursor: pointer; }
@@ -86,7 +83,7 @@ i {
   margin: 0 auto;
   position: relative; }
 
-.my-carousel .b1, .my-carousel .b2, .my-carousel .b3, #buyoutfit .sh1, #buyoutfit .sh2, #buyoutfit .sh3, #buyoutfit .sh4, #modallookshop .s2, .kids-page, .womans-page, .men-page, #mn-oneitem .overly {
+.my-carousel .b1, .my-carousel .b2, .my-carousel .b3, #buyoutfit .sh1, #buyoutfit .sh2, #buyoutfit .sh3, #buyoutfit .sh4, #modallookshop .s2, .kids-page, .womans-page, .men-page {
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: cover; }
@@ -171,6 +168,12 @@ input[type=number] {
     color: gray !important; }
     .modal-body a.pass:hover {
       text-decoration: underline !important; }
+
+.b, .bun {
+  transition: all .35s; }
+  .b:hover, .bun:hover {
+    background-color: #e34668;
+    border-color: #e34668; }
 
 .search-button {
   position: absolute;
@@ -422,11 +425,7 @@ input[type=number] {
   #shoptops a.btn {
     position: relative;
     width: 250px;
-    margin-top: -20px;
-    transition: all .35s; }
-    #shoptops a.btn:hover {
-      background-color: #f19eb0;
-      border-color: #f19eb0; }
+    margin-top: -20px; }
 
 #stock {
   width: 100%;
@@ -468,7 +467,7 @@ input[type=number] {
 
 .cart {
   max-height: 82vh !important;
-  width: 300px;
+  width: 350px;
   left: 60%;
   color: #2a5592;
   z-index: 2000; }
@@ -482,7 +481,7 @@ input[type=number] {
     .cart h6:hover {
       text-decoration: underline; }
   .cart .content {
-    height: 56%;
+    height: 300px;
     overflow-y: auto; }
 
 .wish {
@@ -511,7 +510,7 @@ input[type=number] {
     font-size: x-large; }
   #services p {
     font-weight: normal;
-    color: gray;
+    color: #2a5592;
     font-size: large; }
 
 footer {
@@ -594,15 +593,15 @@ footer {
     opacity: 0;
     transition: all .5s; }
     .item .quick-add .size span {
+      cursor: pointer;
       padding: 5px;
       color: white; }
       .item .quick-add .size span:hover {
-        border: 1px solid whitesmoke; }
+        border: 1px solid white; }
   .item .quick-add .q1 {
     color: white;
     font-weight: bold; }
   .item .quick-add:hover {
-    cursor: pointer;
     height: 80px; }
     .item .quick-add:hover .size {
       opacity: 1; }
@@ -626,14 +625,6 @@ footer {
 
 .colors .blue-flowry {
   background-image: url(../images/blueflowry.jpg); }
-
-.custom-select {
-  border-color: #ea728c !important;
-  background: none !important;
-  color: #ea728c !important;
-  background-color: transparent;
-  text-align: center;
-  text-align-last: center; }
 
 .clr {
   cursor: pointer; }
@@ -695,6 +686,12 @@ footer {
 .container-check input:checked ~ .checkmark {
   background-color: #ea728c; }
 
+.custom-select {
+  border-color: #ea728c !important;
+  background: none !important;
+  color: #ea728c !important;
+  background-color: transparent; }
+
 #mn-cart {
   margin-top: 120px;
   min-height: calc(100vh - 40px);
@@ -722,7 +719,6 @@ footer {
   color: #1e3e6b; }
 
 #mn-account {
-  margin-top: 150px;
   margin-bottom: 100px;
   min-height: calc(100vh - 40px); }
   #mn-account h6 {
@@ -763,7 +759,7 @@ footer {
     z-index: 50;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 10px; }
+    padding-bottom: 200px; }
   #mn-shop .filter button {
     color: #2a5592 !important;
     font-size: large;
@@ -798,14 +794,6 @@ footer {
     margin-bottom: 50px; }
   #mn-shop .filter-mob {
     height: 42.4px; }
-  #mn-shop .mobdrop {
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    background-color: #ea728c !important;
-    height: 42.4px; }
-    #mn-shop .mobdrop .sort {
-      color: white; }
   #mn-shop .overly {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -842,36 +830,56 @@ footer {
 .accordion .rotate {
   transform: rotate(180deg); }
 
+.mobdrop {
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #ea728c !important;
+  height: 42.4px; }
+  .mobdrop .sort {
+    color: white; }
+
 #mn-oneitem {
   margin-top: 120px;
   min-height: calc(100vh - 40px);
   color: #2a5592; }
   #mn-oneitem li {
     margin-bottom: 10px; }
-  #mn-oneitem .photos {
-    cursor: pointer; }
-    #mn-oneitem .photos img {
-      width: 70px;
-      height: 60px; }
-      #mn-oneitem .photos img:hover {
-        border: 1.5px solid #ea728c; }
+  #mn-oneitem .photos img {
+    width: 70px;
+    height: 60px; }
+    #mn-oneitem .photos img:hover {
+      border: 1.5px solid #ea728c; }
+  #mn-oneitem .zoomarrow {
+    width: 40px;
+    height: 40px;
+    background-color: #f3d4d4;
+    cursor: pointer;
+    margin-top: -44px;
+    position: absolute;
+    z-index: 100; }
+    #mn-oneitem .zoomarrow .fa-lg {
+      font-size: 30px;
+      transition: all .35s; }
+    #mn-oneitem .zoomarrow:hover .fa-lg {
+      font-size: 44px; }
+  #mn-oneitem .fulldesk {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fce7cd;
+    z-index: 2000; }
+    #mn-oneitem .fulldesk .img {
+      max-height: 100vh;
+      overflow-y: scroll; }
+    #mn-oneitem .fulldesk .closing {
+      cursor: pointer; }
   #mn-oneitem .card:not(:last-of-type) {
     border-bottom: 1px solid #ea728c; }
   #mn-oneitem .card button {
     padding: 0; }
-  #mn-oneitem .card .card-header {
-    padding-left: 0;
-    padding-right: 0; }
-  #mn-oneitem .overly {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 11000; }
-    #mn-oneitem .overly img {
-      border: 1px solid #132743; }
   #mn-oneitem .information h2 {
     color: #ea728c !important; }
 
@@ -879,31 +887,26 @@ footer {
   border: 2px solid #132743;
   cursor: pointer; }
 
+.mightlike a {
+  color: #ea728c; }
+
 .span {
-  color: #ea728c;
-  font-family: "Oxanium", cursive; }
+  color: #ea728c; }
 
 .dif {
-  color: #2a5592;
-  font-family: "Oxanium", cursive; }
+  color: #2a5592; }
 
 .headsec {
   color: #2a5592;
-  font-size: 1.6rem;
-  font-family: "Oxanium", cursive; }
+  font-size: 1.6rem; }
 
 .glide__slides img {
-  height: 400px;
+  height: calc(100vh - 36.4px);
   width: 100vw; }
 
-.firstone img {
-  height: calc(100vh - 36.4px); }
-
 #sizeSelect {
-  color: white; }
-  #sizeSelect:hover {
-    background-color: #f19eb0;
-    cursor: pointer; }
+  color: white;
+  cursor: pointer; }
 
 .clicked, .chart:hover {
   background-color: #ea728c;
@@ -921,7 +924,8 @@ footer {
 
 .favv:hover {
   text-decoration: underline !important;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: white; }
 
 #mn-contact {
   margin-top: 120px;
@@ -937,7 +941,7 @@ footer {
     text-align: center; }
   #mn-contact .dif {
     font-weight: bold;
-    font-size: larger; }
+    font-size: medium; }
   #mn-contact .help h6 {
     font-size: x-large; }
     #mn-contact .help h6:hover {
@@ -994,15 +998,6 @@ footer {
     margin-top: 37px; }
   .content {
     margin-top: 100px; }
-  #gender {
-    height: 1500px; }
-    #gender .type {
-      pointer-events: none;
-      height: 450px; }
-      #gender .type p {
-        top: 80%; }
-    #gender .w {
-      background-position: center center !important; }
   #mn-cart {
     border-bottom: 0.5px solid #2a5592; }
   #mn-account, #mn-register, .check-mn, #mn-cart, .mn, #mn-contact {

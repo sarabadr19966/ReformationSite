@@ -2,27 +2,26 @@
     width:100%;
     overflow-x: auto;
     white-space: nowrap;
-  -ms-overflow-style: none;
-  &::-webkit-scrollbar {
-    display: none ;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none ;
 
     }
     scrollbar-width: none;
 
    .stk{
-  
        width: 245px;
        height:245px;
        display: inline-block;
        cursor: pointer;
     
        .details{
-        background-color:rgb(228, 224, 224); 
-        position: relative;
-        bottom: 72px;
-        -webkit-font-smoothing: antialiased;
-        transition: all .35s;
-        opacity: 0;        
+            background-color:rgb(228, 224, 224); 
+            position: relative;
+            bottom: 72px;
+            -webkit-font-smoothing: antialiased;
+            transition: all .35s;
+            opacity: 0;        
         }
         &:hover{
             .details{  

@@ -10,11 +10,6 @@
         position: relative;
         width: 250px;
         margin-top: -20px;
-        transition: all .35s;
-        &:hover{
-            background-color:lighten($color: $pink, $amount: 10);
-            border-color:lighten($color: $pink, $amount: 10) ;
-        }
     }
     }
 

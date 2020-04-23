@@ -1,81 +1,69 @@
-%style
-{
-  font-family: $special-font;
-  font-weight: bold;
-  font-size: large;
-}
-
 .my-nav
 {
- transition: all .5s;
-    margin: 0;
-    padding-top: 0 !important;
-    padding-bottom:0 !important;
- @extend %style;
+  transition: all .5s;
+  margin: 0;
+  padding-top: 0 !important;
+  padding-bottom:0 !important;
+  font-weight: bold;
+  font-size: large;
  
   li a{
     color: white !important ;
     cursor: pointer;
   }
-    }
+}
   
    
-    .dropdown{
-      color: white;
-    
-    .drop{
-      background: none;
-      border: none;
-      outline: none;
-    }
-      .dropdown-toggle::after { 
-        content: none; 
-    } 
-      .dropdown-menu
-      {
-        
-        border: none;
-        background-color: white !important;
+.dropdown{
+  color: white;
 
-      .dropdown-item
-      {
-        color:$pink !important;
-        &:hover{
-          background-color: $light-pink !important;
-        }
-      }
-      .dropdown-header
-        {
-          font-weight: bold;
-          color:$purple !important;
-          font-size: larger;
-          cursor:default;
-        }
-
-       
-      
-    }
-  
-  }
-  .brand
+.drop{
+  background: none;
+  border: none;
+  outline: none;
+}
+  .dropdown-toggle::after { 
+    content: none; 
+} 
+  .dropdown-menu
   {
-    color: $pink !important;
-    font-size: xx-large;
-    font-weight: bold;
-    font-family: 'Pacifico', cursive;
     
+    border: none;
+    background-color: white !important;
+
+  .dropdown-item
+  {
+    color:$pink !important;
+    &:hover{
+      background-color: $light-pink !important;
+    }
   }
-  
+  .dropdown-header
+    {
+      font-weight: bold;
+      color:$purple !important;
+      font-size: larger;
+      cursor:default;
+    }
+
     
+  
+}
 
-
-          
+}
+.brand
+{
+  color: $pink !important;
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+  
+}
+         
 //nav after scrolling
 .nav1
 {
   background-color: $purple;
-  
-
 }
 
 .navbar-toggler{

@@ -1,176 +1,186 @@
-  html {
-      scroll-behavior: smooth;
-    }
-  body{
-    font-family: $special-font;
+html {
+    scroll-behavior: smooth;
+}
+body{
+  font-family: $special-font;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-  }  
-
-
-  .b{
-    font-weight: bold;
-    font-size: large;
-    color:$pink !important;
-    border: 2px solid $pink;
-  }
+}  
 
 
-    h3{
-      color:whitesmoke;
-      font-weight: bold;
-      font-size: 4rem;
-  }
-  h4
-  {
-      font-weight: bold;
-      color: lighten($color: $purple, $amount: 20);
-      font-size: 2rem;
+.b{
+  font-weight: bold;
+  font-size: large;
+  color:$pink !important;
+  border: 2px solid $pink;
+}
 
-  }
-  h5
-  {
-    font-weight: bold;
-  }
-  i{
-    color: $pink;
-  }
-  .line 
-  {
-    width: 80px;
-    height: 5px;
-    background-color:$pink;
-    margin: 0 auto;
-    position: relative;
+h3{
+  color:whitesmoke;
+  font-weight: bold;
+  font-size: 4rem;
+}
 
-  }
-  %backgroundImg
-  {
-    background-repeat: no-repeat !important;
-    background-position: center center !important;
-    background-size: cover ;
-    
-  }
+h4
+{
+  font-weight: bold;
+  color: lighten($color: $purple, $amount: 20);
+  font-size: 2rem;
+}
 
-  .btn:focus,.btn:active ,.btn:hover,
-  .navbar-toggler:focus,.navbar-toggler:active,.navbar-toggle:hover,
-  .custom-select:hover,.custom-select:focus,.custom-select:active{
-    outline: none ;
-    box-shadow: none;
-    color: whitesmoke;
-  }
-  .form-control:focus{
-    border-color:$pink;
-    outline:0;
-    box-shadow:none;
-  }
+h5
+{
+  font-weight: bold;
+}
+
+i{
+  color: $pink;
+}
+
+.line 
+{
+  width: 80px;
+  height: 5px;
+  background-color:$pink;
+  margin: 0 auto;
+  position: relative;
+}
 
 
-  .bun
-    {  
-        color: white !important;
-        background-color: $pink;
-        border: 2px solid $pink;
-        font-weight: bold;
-        font-size: large;
-    }
-    
-    //remove arrows in chrome
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-    }
-
-    //remove arrows in firefox
-    input[type=number] {
-    -moz-appearance: textfield;
-    }
-
-
-    // add background in other pages
-    .navv{
-      background-color: $purple !important;
-      margin: 0;
-      padding-top: 0 !important;
-      padding-bottom:0 !important;
-  }
-
-
-
-
-  .inc-dec{
-    width: 30px !important;
-    border: 1px solid $pink;
-   
-  }
-  .inc , .dec{
-    @extend .inc-dec;
-    
-    cursor: pointer;
-    &:hover
-    {
-      background-color: lighten($color: $pink, $amount: 5);
-    }
-  }
+%backgroundImg
+{
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover ;
   
-  .form-control{
-    border-color: $pink;
+}
+
+.btn:focus,.btn:active ,.btn:hover,
+.navbar-toggler:focus,.navbar-toggler:active,.navbar-toggle:hover,
+.custom-select:hover,.custom-select:focus,.custom-select:active{
+  outline: none ;
+  box-shadow: none;
+  color: whitesmoke;
+}
+
+.form-control:focus{
+  border-color:$pink;
+  outline:0;
+  box-shadow:none;
+}
+
+
+.bun{  
+  color: white !important;
+  background-color: $pink;
+  border: 2px solid $pink;
+  font-weight: bold;
+  font-size: large;
+}
+  
+//remove arrows in chrome num
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+//remove arrows in firefox
+input[type=number] {
+-moz-appearance: textfield;
+}
+
+
+// add background in other pages
+.navv{
+  background-color: $purple !important;
+  margin: 0;
+  padding-top: 0 !important;
+  padding-bottom:0 !important;
+}
+
+
+
+
+.inc-dec{
+  width: 30px !important;
+  border: 1px solid $pink;
+  
+}
+
+.inc , .dec{
+  @extend .inc-dec;
+  
+  cursor: pointer;
+  &:hover{
+    background-color: lighten($color: $pink, $amount: 5);
   }
+}
+
+.form-control{
+  border-color: $pink;
+}
 
 
 // scrollbar style
-    /* width */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
 
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 
 // modal for account
 .modal-backdrop {
-    
-    z-index: 90;
+  z-index: 90;
 }
 .modal-header
 {
+  border: none;
+  .close{
     border: none;
-    .close{
-        border: none;
-        outline: 0;
-    }
+    outline: 0;
+  }
 }
 
 .modal-body{
-    label{
-        color: $pink;
-        font-weight: normal;
-    }
-    a{
-      cursor: pointer;
-       &.pass{
-        color: gray !important;
-        &:hover{
-          text-decoration: underline !important;
+  label{
+    color: $pink;
+    font-weight: normal;
+  }
+  a{
+    cursor: pointer;
+    &.pass{
+      color: gray !important;
+      &:hover{
+        text-decoration: underline !important;
 
-        }
-       }
-       
-
+      }
     }
+      
+
+  }
+}
+.b,.bun{
+  transition: all .35s;
+  &:hover{
+    background-color: darken($color: $pink, $amount: 10);
+    border-color:  darken($color: $pink, $amount: 10);
+  }
 }

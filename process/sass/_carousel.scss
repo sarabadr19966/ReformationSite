@@ -1,43 +1,44 @@
 
 .my-carousel {
+  height: 100vh;
+  .carousel-item
+  {
     height: 100vh;
-    .carousel-item
-    {
-     height: 100vh;
-    }
+  }
 
-    .carousel-caption{
+  .carousel-caption{
 
-      h4{
-        color:lighten($color: white, $amount: 50) ;
-        font-size: 2rem;
-      }
-      top: 40%;
-      a{
-        color:lighten($color: white, $amount: 50) ;
-        font-size:1.5rem;
-        text-decoration: underline;
-      }
+    h4{
+      color:lighten($color: white, $amount: 50) ;
+      font-size: 2rem;
     }
-    .carousel-indicators > li {
-        width: 10px;
-        height: 10px;
-     border-radius: 50%;
+    top: 40%;
+    a{
+      color:lighten($color: white, $amount: 50) ;
+      font-size:1.5rem;
+      text-decoration: underline;
+    }
+  }
+
+  .carousel-indicators > li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
     background-color:  $pink !important;
-   }
-     //set the background of carousel 
-   .b1 {
-     background-image: url(../images/b3.jpg);
-     @extend %backgroundImg;
-     background-position: top center !important;
-   }
+  }
+
+  //set the background of carousel 
+  .b1 {
+    background-image: url(../images/b3.jpg);
+    @extend %backgroundImg;
+    background-position: top center !important;
+  }
  
   .b2{
-     background-image: url(../images/landscape_01.jpg);
-     @extend %backgroundImg;
-     background-position: top center !important;
+    background-image: url(../images/landscape_01.jpg);
+    @extend %backgroundImg;
+    background-position: top center !important;
 
-  
   }
 
  .b3{
@@ -45,34 +46,37 @@
   @extend %backgroundImg;
   background-position: top center !important;
 
+  }
 }
-}
-   .carousel-control-prev-icon,
-   .carousel-control-next-icon {
-     height: 50px;
-     width: 50px;
-     outline: $pink;
-     border: 3px solid $pink;
-     border-radius: 50%;
-     background-image: none;
-     background-color:$pink;
-   }
-   
-   .carousel-control-next-icon:after
-   {
-     content: '>';
-     font-size: 30px;
-     color: white;
-     font-weight: bold;
 
-   }
-   
-   .carousel-control-prev-icon:after {
-     content: '<';
-     font-size: 30px;
-     font-weight: bold;
-     color: white;
-   }
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+  outline: $pink;
+  border: 3px solid $pink;
+  border-radius: 50%;
+  background-image: none;
+  background-color:$pink;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
 
   
 

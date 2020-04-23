@@ -13,46 +13,42 @@
             z-index: 50;
             overflow: auto;
             -webkit-overflow-scrolling: touch;
-            padding-bottom: 10px;
-      }
+            padding-bottom: 200px;
+        }
         button{
             color: lighten($color: $purple, $amount: 20) !important;
             font-size: large;
             font-weight: bold;
-
-    
         }
     
-     .card{
+        .card{
             &:not(:last-of-type){
             border-bottom: 1.1px solid $pink;
             }
-
-         
-        }
+       }  
       
         
-          label{
-              color: lighten($color: $purple, $amount: 20);
-          }
+        label{
+            color: lighten($color: $purple, $amount: 20);
+        }
         
-            .c{
-               font-size: medium !important;
-               font-weight: normal;
-            
-            }
+        .c{
+            font-size: medium !important;
+            font-weight: normal;
+        
+        }
         
     }
     .checkmark{
-            display: flex;
-            justify-content: center;
-            align-content: center;
-           i{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        i{
             color: white;
             visibility: hidden;
             transition: all .35s;
             align-self:center;
-            }
+        }
     }
     .container-check input:checked ~ .checkmark {
         i{
@@ -61,85 +57,84 @@
     }
     
     
-        .colors{
-            position: static;
-        }
-        .quick-add{
-            bottom: 150px;
-        }
+    .colors{
+        position: static;
+    }
+    .quick-add{
+        bottom: 150px;
+    }
 
      
    
-        .mob{
-            position: sticky;
-            top: 36px;
-            z-index: 90;  
-            height: 42.2px;  
-            margin-bottom: 50px;     
-        }
-        .filter-mob{
-            height: 42.4px;
-        }
-        .mobdrop{
-            border: none;
-            font-weight: bold;
-            cursor: pointer;
-            background-color: $pink !important;
-          .sort{
-              color: white;
-          }
-            height: 42.4px;
-        }
-        .overly{
-         
-            overflow: auto;
-            
-            -webkit-overflow-scrolling: touch;
-            scroll-margin-left: 20px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            background-color: white;
-            z-index: 11000;
-            .stick-top{
-                padding-bottom: 320px;
-            }
-           
-            .title{
-                color: lighten($color: $purple, $amount: 20);
-    
-            }
-         .stick{
-        
-                top: 60px;
-                  max-height: calc(100vh);
-                       
-                  z-index: 50;
-         }
-         
-        }
+    .mob{
+        position: sticky;
+        top: 36px;
+        z-index: 90;  
+        height: 42.2px;  
+        margin-bottom: 50px;     
     }
-    .sort{
-        color:lighten($color: $purple, $amount: 20);
-        font-weight: bold;
-        font-size: large;
+    .filter-mob{
+        height: 42.4px;
     }
-    .accordion{
-        .card-header
-        {
-            background-color:white;
-            border: none !important;
-          
-        }
-        .card{
-            border: none;
-            background-color:white ;
-        }
-        .rotate{
-            transform: rotate(180deg);
       
-          }
+    .overly{
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-margin-left: 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: white;
+        z-index: 11000;
+        .stick-top{
+            padding-bottom: 320px;
+        }
+        
+        .title{
+            color: lighten($color: $purple, $amount: 20);
+
+        }
+        .stick{
+        
+            top: 60px;
+            max-height: calc(100vh);
+                
+            z-index: 50;
+        }
+        
     }
-  
+}
+.sort{
+    color:lighten($color: $purple, $amount: 20);
+    font-weight: bold;
+    font-size: large;
+}
+.accordion{
+    .card-header
+    {
+        background-color:white;
+        border: none !important;
+        
+    }
+    .card{
+        border: none;
+        background-color:white ;
+    }
+    .rotate{
+        transform: rotate(180deg);
+    
+    }
+}
+
+.mobdrop{
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: $pink !important;
+    .sort{
+        color: white;
+    }
+    height: 42.4px;
+}
