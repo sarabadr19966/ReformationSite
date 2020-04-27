@@ -1,11 +1,12 @@
 #shoptops{
-
+    
+    h5{
+        font-size: 1.8rem;
+        text-transform: uppercase;
+    }
     a{
         color: $pink;
-        h5{
-            font-size: 1.8rem;
-            text-transform: uppercase;
-        }
+    
     &.btn{
         position: relative;
         width: 250px;

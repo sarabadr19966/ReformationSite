@@ -417,11 +417,12 @@ input[type=number] {
   width: 400px !important;
   background-image: url(../images/shoplook1.jpg); }
 
+#shoptops h5 {
+  font-size: 1.8rem;
+  text-transform: uppercase; }
+
 #shoptops a {
   color: #ea728c; }
-  #shoptops a h5 {
-    font-size: 1.8rem;
-    text-transform: uppercase; }
   #shoptops a.btn {
     position: relative;
     width: 250px;

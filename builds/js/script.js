@@ -324,15 +324,15 @@ $("document").ready(function(){
     totalPrice("item2");
     $('[data-toggle="tooltip"]').tooltip();
 
-  $('input:radio[name=address]').change(
-      function(){
-          if ($(this).is(':checked') && $(this).val() == 'no') {
-            $('.altr').removeClass("d-none");
-          }
-          else if ($(this).is(':checked') && $(this).val() == 'yes') {
-            $('.altr').addClass("d-none");
-          }
-      });
+    $('input:radio[name=address]').change(
+        function(){
+            if ($(this).is(':checked') && $(this).val() == 'no') {
+              $('.altr').removeClass("d-none");
+            }
+            else if ($(this).is(':checked') && $(this).val() == 'yes') {
+              $('.altr').addClass("d-none");
+            }
+        });
       $('input:radio[name=tax]').change(
         function(){
             if ($(this).is(':checked') && $(this).val() == 'yes') {
