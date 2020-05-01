@@ -119,8 +119,7 @@ $("document").ready(function(){
   });
     $('.black').click(function(){
       $('.modalcrs').removeClass('slide');
-      $('.soldone').toggleClass('sold')
-
+      $('.soldone').removeClass('sold');
       $('.colorechoosen').html("Black");
       $('.modalcrs').carousel(0); 
       $('.Firstslide').attr("src","images/shlok2b.jpg");
@@ -131,6 +130,7 @@ $("document").ready(function(){
       $('.modalcrs').addClass('slide'); 
       $('.white').click(function(){
         $('.colorechoosen').html("White");
+        $('.soldone').addClass('sold');
         $('.modalcrs').removeClass('slide'); 
         $('.modalcrs').carousel(0); 
         $('.Firstslide').attr("src","images/shlok2.jpg");

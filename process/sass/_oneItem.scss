@@ -75,7 +75,9 @@
     }
 }
 
-
+.sizeguide{
+    color: lighten($color: $purple, $amount: 20) !important;
+}
 .colors{
     span{
         border: 2px solid $purple;
@@ -131,9 +133,7 @@
 }
 .favv{
     &:hover{
-        text-decoration: underline !important;
         cursor: pointer;
-        background-color: white;
     }
 }
 

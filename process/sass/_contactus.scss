@@ -2,6 +2,7 @@
     margin-top: 120px;
     min-height: calc(100vh - 40px);
     color: lighten($color: $purple, $amount: 20);
+  
     .cls{
         cursor: pointer;
         padding: 10px;
@@ -72,7 +73,6 @@
             text-decoration: none !important;
         }
         span.title{
-            font-size: x-large !important;
             color: lighten($color: $purple, $amount: 20);
         
         }

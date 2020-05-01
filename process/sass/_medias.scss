@@ -60,6 +60,16 @@
   #mn-account,#mn-register,.check-mn,#mn-cart,.mn,#mn-contact{
   margin-top: 70px !important; 
   }
+  #mn-contact{
+    span.title{
+      font-size: large !important;
+      font-weight:normal !important;
+   }
+   span.dif{
+    font-size: meduim !important;
+    font-weight:normal !important;
+   }
+  }
 
 }
 @media(max-width:767px)
@@ -89,7 +99,7 @@
   }}
 
 }
-@media(max-width:1024px)and(min-width:768px){
+@media(max-width:1200px)and(min-width:768px){
   .my-carousel {
     height: 42vmax;
     .carousel-item

@@ -15,6 +15,10 @@ body{
   font-size: large;
   color:$pink !important;
   border: 2px solid $pink;
+  cursor: pointer;
+  &:hover{
+    text-decoration: underline !important;
+  }
 }
 
 h3{
@@ -78,6 +82,12 @@ i{
   border: 2px solid $pink;
   font-weight: bold;
   font-size: large;
+  transition: all .35s;
+  cursor: pointer;
+  &:hover{
+    background-color: darken($color: $pink, $amount: 10);
+    border-color:  darken($color: $pink, $amount: 10);
+  }
 }
   
 //remove arrows in chrome num
@@ -113,11 +123,6 @@ input[type=number] {
 
 .inc , .dec{
   @extend .inc-dec;
-  
-  cursor: pointer;
-  &:hover{
-    background-color: lighten($color: $pink, $amount: 5);
-  }
 }
 
 .form-control{
@@ -178,10 +183,8 @@ input[type=number] {
 
   }
 }
-.b,.bun{
-  transition: all .35s;
-  &:hover{
-    background-color: darken($color: $pink, $amount: 10);
-    border-color:  darken($color: $pink, $amount: 10);
-  }
+
+.new{
+
+  margin-left: -75px;
 }

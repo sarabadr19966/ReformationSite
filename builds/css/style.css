@@ -58,7 +58,10 @@ body {
   font-weight: bold;
   font-size: large;
   color: #ea728c !important;
-  border: 2px solid #ea728c; }
+  border: 2px solid #ea728c;
+  cursor: pointer; }
+  .b:hover {
+    text-decoration: underline !important; }
 
 h3 {
   color: whitesmoke;
@@ -105,7 +108,12 @@ i {
   background-color: #ea728c;
   border: 2px solid #ea728c;
   font-weight: bold;
-  font-size: large; }
+  font-size: large;
+  transition: all .35s;
+  cursor: pointer; }
+  .bun:hover {
+    background-color: #e34668;
+    border-color: #e34668; }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -124,11 +132,6 @@ input[type=number] {
 .inc-dec, .inc, .dec {
   width: 30px !important;
   border: 1px solid #ea728c; }
-
-.inc, .dec {
-  cursor: pointer; }
-  .inc:hover, .dec:hover {
-    background-color: #ed889e; }
 
 .form-control {
   border-color: #ea728c; }
@@ -169,11 +172,8 @@ input[type=number] {
     .modal-body a.pass:hover {
       text-decoration: underline !important; }
 
-.b, .bun {
-  transition: all .35s; }
-  .b:hover, .bun:hover {
-    background-color: #e34668;
-    border-color: #e34668; }
+.new {
+  margin-left: -75px; }
 
 .search-button {
   position: absolute;
@@ -469,7 +469,7 @@ input[type=number] {
 .cart {
   max-height: 82vh !important;
   width: 350px;
-  left: 60%;
+  left: 55%;
   color: #2a5592;
   z-index: 2000; }
   .cart span a {
@@ -486,7 +486,7 @@ input[type=number] {
     overflow-y: auto; }
 
 .wish {
-  left: 50%; }
+  left: 48%; }
   .wish .recent {
     color: #ea728c !important; }
     .wish .recent:hover {
@@ -798,7 +798,6 @@ footer {
   #mn-shop .overly {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    scroll-margin-left: 20px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -884,6 +883,9 @@ footer {
   #mn-oneitem .information h2 {
     color: #ea728c !important; }
 
+.sizeguide {
+  color: #2a5592 !important; }
+
 .colors span {
   border: 2px solid #132743;
   cursor: pointer; }
@@ -924,9 +926,7 @@ footer {
   margin-bottom: 10px; }
 
 .favv:hover {
-  text-decoration: underline !important;
-  cursor: pointer;
-  background-color: white; }
+  cursor: pointer; }
 
 #mn-contact {
   margin-top: 120px;
@@ -965,7 +965,6 @@ footer {
   #mn-contact #mob-accordion .btn-link {
     text-decoration: none !important; }
   #mn-contact #mob-accordion span.title {
-    font-size: x-large !important;
     color: #2a5592; }
   #mn-contact #mob-accordion .card-header {
     padding: 0; }
@@ -1002,7 +1001,13 @@ footer {
   #mn-cart {
     border-bottom: 0.5px solid #2a5592; }
   #mn-account, #mn-register, .check-mn, #mn-cart, .mn, #mn-contact {
-    margin-top: 70px !important; } }
+    margin-top: 70px !important; }
+  #mn-contact span.title {
+    font-size: large !important;
+    font-weight: normal !important; }
+  #mn-contact span.dif {
+    font-size: meduim !important;
+    font-weight: normal !important; } }
 
 @media (max-width: 767px) {
   #mn-oneitem {
@@ -1018,7 +1023,7 @@ footer {
     .my-carousel .carousel-item {
       height: calc(100vmax - 30px); } }
 
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1200px) and (min-width: 768px) {
   .my-carousel {
     height: 42vmax; }
     .my-carousel .carousel-item {
