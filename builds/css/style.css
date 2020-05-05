@@ -309,7 +309,7 @@ input[type=number] {
   #ourproducts .s {
     transition: all .35s; }
     #ourproducts .s img {
-      min-height: 80vh; }
+      max-height: 80vh; }
 
 #deal-of-the-week {
   background-image: url(../images/deal_ofthe_week.png);
@@ -404,7 +404,8 @@ input[type=number] {
 
 #modallookshop .white {
   background-color: white;
-  border-radius: 50%; }
+  border-radius: 50%;
+  cursor: default; }
 
 #modallookshop .black {
   background-color: black;
@@ -843,6 +844,9 @@ footer {
   color: #2a5592; }
   #mn-oneitem li {
     margin-bottom: 10px; }
+  #mn-oneitem .glide__slides img {
+    height: calc(100vh - 36.4px);
+    width: 100vw; }
   #mn-oneitem .photos img {
     width: 70px;
     height: 60px; }
@@ -884,9 +888,11 @@ footer {
 .sizeguide {
   color: #2a5592 !important; }
 
-.colors span {
-  border: 2px solid #132743;
+.red-flowry {
   cursor: pointer; }
+
+.colors span {
+  border: 2px solid #132743; }
 
 .mightlike a {
   color: #ea728c; }
@@ -900,10 +906,6 @@ footer {
 .headsec {
   color: #2a5592;
   font-size: 1.6rem; }
-
-.glide__slides img {
-  height: calc(100vh - 36.4px);
-  width: 100vw; }
 
 #sizeSelect {
   color: white;

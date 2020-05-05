@@ -116,35 +116,51 @@ $("document").ready(function(){
 
 
 
-  });
+    });
+    var clickedwhite=0;
+    var clickedblack=0;
     $('.black').click(function(){
-      $('.chart').removeClass('clicked');
-      $('.favv').html('Add To Favorite');
-      $('#sizeSelect').html("Add To Bag");
-      $('.modalcrs').removeClass('slide');
-      $('.soldone').removeClass('sold');
-      $('.colorechoosen').html("Black");
-      $('.modalcrs').carousel(0); 
-      $('.Firstslide').attr("src","images/shlok2b.jpg");
-      $('.Secondslide').attr("src","images/shlok21b.jpg");
-      $('.Thirdslide').attr("src","images/shlok22b.jpg");
-      $('.Fourthslide').attr("src","images/shlok32b.jpg");
-      $('.modalcrs').carousel(0); 
-      $('.modalcrs').addClass('slide'); 
-      $('.white').click(function(){
+      if (clickedblack ===0){
         $('.chart').removeClass('clicked');
         $('.favv').html('Add To Favorite');
         $('#sizeSelect').html("Add To Bag");
-        $('.colorechoosen').html("White");
-        $('.soldone').addClass('sold');
-        $('.modalcrs').removeClass('slide'); 
+        $('.modalcrs').removeClass('slide');
+        $('.soldone').removeClass('sold');
+        $('.colorechoosen').html("Black");
         $('.modalcrs').carousel(0); 
-        $('.Firstslide').attr("src","images/shlok2.jpg");
-        $('.Secondslide').attr("src","images/shlok21.jpg");
-        $('.Thirdslide').attr("src","images/shlok22.jpg");
-        $('.Fourthslide').attr("src","images/shlok23.jpg");
+        $('.Firstslide').attr("src","images/shlok2b.jpg");
+        $('.Secondslide').attr("src","images/shlok21b.jpg");
+        $('.Thirdslide').attr("src","images/shlok22b.jpg");
+        $('.Fourthslide').attr("src","images/shlok32b.jpg");
         $('.modalcrs').carousel(0); 
         $('.modalcrs').addClass('slide'); 
+        clickedblack++;
+        clickedwhite=0;
+        $(this).css('cursor','default');
+        $('.white').css('cursor','pointer');
+      }
+ 
+      $('.white').click(function(){
+        if(clickedwhite===0){
+          $('.chart').removeClass('clicked');
+          $('.favv').html('Add To Favorite');
+          $('#sizeSelect').html("Add To Bag");
+          $('.colorechoosen').html("White");
+          $('.soldone').addClass('sold');
+          $('.modalcrs').removeClass('slide'); 
+          $('.modalcrs').carousel(0); 
+          $('.Firstslide').attr("src","images/shlok2.jpg");
+          $('.Secondslide').attr("src","images/shlok21.jpg");
+          $('.Thirdslide').attr("src","images/shlok22.jpg");
+          $('.Fourthslide').attr("src","images/shlok23.jpg");
+          $('.modalcrs').carousel(0); 
+          $('.modalcrs').addClass('slide'); 
+          clickedblack=0;
+          clickedwhite++;
+          $(this).css('cursor','default');
+          $('.black').css('cursor','pointer');
+        }
+       
       })
     })
 
@@ -398,6 +414,7 @@ $("document").ready(function(){
     })
 
   }
+
   if($('#one-item') && $('#one-item').length ){
     $('.zoomarrow').click(function(){
       $('.fulldesk').removeClass("d-none");
@@ -414,41 +431,59 @@ $("document").ready(function(){
       $('.openClose').not( $('.openClose',this)).removeClass('rotate');
 
     })
-    $('.red-flowry').click(function(){
-      $('.chart').removeClass('clicked');
-      $('.favv').html('Add To Favorite');
-      $('#sizeSelect').html("Select Size");
-      $('.first-color').addClass('d-none');
-      $('.second-color').removeClass('d-none');
-      var src=  $('.second-color .first').attr('src');
-      $('.main-photo img').attr('src',src);
-      $('#zoom_01').data('zoom-image',src).elevateZoom({
-        zoomType: "inner",
-        cursor: 'crosshair',
-        zoomWindowFadeIn: 500,
-        zoomWindowFadeOut: 750,
-        scrollZoom:true
-      }); ;
+    var clickedred=0;
+    var clickedblue=0;
 
-      
+    $('.red-flowry').click(function(){
+      if(clickedred===0){ 
+        $('.chart').removeClass('clicked');
+        $('.favv').html('Add To Favorite');
+        $('#sizeSelect').html("Select Size");
+        $('.first-color').addClass('d-none');
+        $('.second-color').removeClass('d-none');
+        var src=  $('.second-color .first').attr('src');
+        $('.main-photo img').attr('src',src);
+        $('#zoom_01').data('zoom-image',src).elevateZoom({
+          zoomType: "inner",
+          cursor: 'crosshair',
+          zoomWindowFadeIn: 500,
+          zoomWindowFadeOut: 750,
+          scrollZoom:true
+        }); 
+        clickedred++;
+        clickedblue=0;
+        $('.blue-flowry').css('cursor','pointer');
+        $(this).css('cursor','default');
+
+
+      }
+   
+
+      $('.blue-flowry').click(function(){
+        if(clickedblue===0){ 
+          $('.chart').removeClass('clicked');
+          $('.favv').html('Add To Favorite');
+          $('#sizeSelect').html("Select Size");
+          $('.first-color').removeClass('d-none');
+          $('.second-color').addClass('d-none');
+          var src=  $('.first-color .first').attr('src');
+          $('.main-photo img').attr('src',src);
+          $('#zoom_01').data('zoom-image',src).elevateZoom({
+            zoomType: "inner",
+            cursor: 'crosshair',
+            zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 750,
+            scrollZoom:true
+          }); ;
+          clickedblue++;
+          clickedred=0;
+          $('.red-flowry').css('cursor','pointer');
+          $(this).css('cursor','default');
+
+      }
+      })
     })
-    $('.blue-flowry').click(function(){
-      $('.chart').removeClass('clicked');
-      $('.favv').html('Add To Favorite');
-      $('#sizeSelect').html("Select Size");
-      $('.first-color').removeClass('d-none');
-      $('.second-color').addClass('d-none');
-      var src=  $('.first-color .first').attr('src');
-      $('.main-photo img').attr('src',src);
-      $('#zoom_01').data('zoom-image',src).elevateZoom({
-        zoomType: "inner",
-        cursor: 'crosshair',
-        zoomWindowFadeIn: 500,
-        zoomWindowFadeOut: 750,
-        scrollZoom:true
-      }); ;
-      
-    })
+  
 
 
 // img of dess in mob    
@@ -497,27 +532,39 @@ $("document").ready(function(){
         var src= $(this).attr("src");
         $('.main-photo img').attr("src",src);
     });
-
+var cr=0;
+var cb=0;
       $('.red-flowry').click(function(){
-        $('.firstone img').each(function(){
-          var src= $(this).attr('src').slice(0,15);
-          src=`${src}2.jpg`;
-          $(this).attr('src',src)
+        if (cr ===0){
+          $('.firstone img').each(function(){
+            var src= $(this).attr('src').slice(0,15);
+            src=`${src}2.jpg`;
+            $(this).attr('src',src)
+          })
+          glide.update({ startAt: 0})
+          cr++;
+          cb=0;
+        }
+       
+          
+        $('.blue-flowry').click(function(){
+          if(cb===0){
+            $('.firstone img').each(function(){
+              var src= $(this).attr('src').slice(0,15);
+              src=`${src}.jpg`;
+              $(this).attr('src',src)
+            })
+            glide.update({ startAt: 0})
+            cr=0;
+            cb++;
+          }
+        
+      
         })
-        glide.update({ startAt: 0})
-
   })
-  $('.blue-flowry').click(function(){
-    $('.firstone img').each(function(){
-      var src= $(this).attr('src').slice(0,15);
-      src=`${src}.jpg`;
-      $(this).attr('src',src)
-    })
-    glide.update({ startAt: 0})
 
-  })
-  }
-  }
+  }}
+  
   
   if($('#mn-contact') && $('#mn-contact').length){
     $('.flip').click(function(){

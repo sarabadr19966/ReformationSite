@@ -5,7 +5,12 @@
     li{
         margin-bottom: 10px;
     }
-
+    .glide__slides{
+        img{
+            height: calc(100vh - 36.4px);
+            width: 100vw;
+        }
+    }
     .photos{
         
         img{
@@ -78,10 +83,12 @@
 .sizeguide{
     color: lighten($color: $purple, $amount: 20) !important;
 }
+.red-flowry{
+    cursor: pointer;
+}
 .colors{
     span{
         border: 2px solid $purple;
-        cursor: pointer;
     }
     
 }
@@ -101,12 +108,7 @@
     color: lighten($color: $purple, $amount: 20);
     font-size: 1.6rem;
 }
-.glide__slides{
-    img{
-        height: calc(100vh - 36.4px);
-        width: 100vw;
-    }
-}
+
 
 
 #sizeSelect{
