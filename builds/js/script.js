@@ -118,6 +118,9 @@ $("document").ready(function(){
 
   });
     $('.black').click(function(){
+      $('.chart').removeClass('clicked');
+      $('.favv').html('Add To Favorite');
+      $('#sizeSelect').html("Add To Bag");
       $('.modalcrs').removeClass('slide');
       $('.soldone').removeClass('sold');
       $('.colorechoosen').html("Black");
@@ -129,6 +132,9 @@ $("document").ready(function(){
       $('.modalcrs').carousel(0); 
       $('.modalcrs').addClass('slide'); 
       $('.white').click(function(){
+        $('.chart').removeClass('clicked');
+        $('.favv').html('Add To Favorite');
+        $('#sizeSelect').html("Add To Bag");
         $('.colorechoosen').html("White");
         $('.soldone').addClass('sold');
         $('.modalcrs').removeClass('slide'); 
@@ -352,33 +358,46 @@ $("document").ready(function(){
         });
   }
 
-
   if($('#one-item') && $('#one-item').length  ||$('#modallookshop') && $('#modallookshop').length)
 
   {
     $('.chart').click(function(){
-      $('.chart').removeClass('clicked');
-      $(this).addClass('clicked');
-      $('.favv').html('Add To Favorite');
-      $('#sizeSelect').html("Add To Bag");
-      $('.favv').click(function(){
+      if($(this).hasClass('clicked')){
+        $('.chart').removeClass('clicked');
+        $('.favv').html('Add To Favorite');
+        $('#sizeSelect').html("Select Size");
+      }
+      else{
+        $('.chart').removeClass('clicked');
+        $(this).addClass('clicked');
+        $('.favv').html('Add To Favorite');
+        $('.favv').click(function(){
         $(this).html("Favorited");
-      });
-      $('#sizeSelect').click(function(){
-        $(this).html("Added");
+        $(this).click(function(){
+          $(this).html("Add to favorite");
+        })
+        });
 
-      })
-    });
+  
+
+        if($(this).hasClass('sold')){
+          $('#sizeSelect').html("Join The Wait List");
+          $('#sizeSelect').click(function(){
+          $(this).html('Joined') 
+          })
+      
+        }
+        else{
+          $('#sizeSelect').html("Add To The cart");
+          $('#sizeSelect').click(function(){
+          $(this).html('Added') 
+          })
+        }
     
-    $('.sold').click(function(){
-      $('#sizeSelect').html("Join The Wait List");
-      $('#sizeSelect').click(function(){
-      $(this).html('Joined') 
-      })
-    });
+      }
+    })
+
   }
-
-
   if($('#one-item') && $('#one-item').length ){
     $('.zoomarrow').click(function(){
       $('.fulldesk').removeClass("d-none");
@@ -396,6 +415,9 @@ $("document").ready(function(){
 
     })
     $('.red-flowry').click(function(){
+      $('.chart').removeClass('clicked');
+      $('.favv').html('Add To Favorite');
+      $('#sizeSelect').html("Select Size");
       $('.first-color').addClass('d-none');
       $('.second-color').removeClass('d-none');
       var src=  $('.second-color .first').attr('src');
@@ -411,6 +433,9 @@ $("document").ready(function(){
       
     })
     $('.blue-flowry').click(function(){
+      $('.chart').removeClass('clicked');
+      $('.favv').html('Add To Favorite');
+      $('#sizeSelect').html("Select Size");
       $('.first-color').removeClass('d-none');
       $('.second-color').addClass('d-none');
       var src=  $('.first-color .first').attr('src');

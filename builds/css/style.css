@@ -10,6 +10,8 @@
   .my-nav li a {
     color: white !important;
     cursor: pointer; }
+  .my-nav li .nav-link:hover {
+    color: #ea728c !important; }
 
 .dropdown {
   color: white; }
@@ -28,7 +30,7 @@
         background-color: #f3d4d4 !important; }
     .dropdown .dropdown-menu .dropdown-header {
       font-weight: bold;
-      color: #132743 !important;
+      color: #2a5592 !important;
       font-size: larger;
       cursor: default; }
 
@@ -458,10 +460,6 @@ input[type=number] {
   top: 50px;
   padding: 0;
   color: #ea728c; }
-  .mega-menu h3 {
-    font-size: xx-large;
-    font-weight: bold;
-    color: #132743; }
 
 .mega .row {
   height: 460px; }
@@ -477,7 +475,7 @@ input[type=number] {
   .cart .row {
     height: auto; }
   .cart h6 {
-    color: #2a5592 !important;
+    color: #ea728c !important;
     font-weight: bold; }
     .cart h6:hover {
       text-decoration: underline; }

@@ -7,13 +7,21 @@
   font-weight: bold;
   font-size: large;
  
-  li a{
-    color: white !important ;
-    cursor: pointer;
+  li{
+   a{
+      color: white !important ;
+      cursor: pointer;
+    }
+    .nav-link{
+      &:hover{
+        color: $pink !important;
+      }
+    }
+      
   }
 }
   
-   
+ 
 .dropdown{
   color: white;
 
@@ -41,7 +49,7 @@
   .dropdown-header
     {
       font-weight: bold;
-      color:$purple !important;
+      color:lighten($color: $purple, $amount: 20) !important;
       font-size: larger;
       cursor:default;
     }
