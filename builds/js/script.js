@@ -32,7 +32,8 @@ $("document").ready(function(){
   if(is_touch_device1()){
     $(".shop").removeClass("shop-desk");
     $(".type").removeClass("type-desk");
-    $("footer").addClass("ftr");      
+    $("footer").addClass("ftr");   
+       
   }
 
 

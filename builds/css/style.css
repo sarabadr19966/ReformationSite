@@ -88,7 +88,7 @@ i {
   margin: 0 auto;
   position: relative; }
 
-.my-carousel .b1, .my-carousel .b2, .my-carousel .b3, #buyoutfit .sh1, #buyoutfit .sh2, #buyoutfit .sh3, #buyoutfit .sh4, #modallookshop .s2, .kids-page, .womans-page, .men-page {
+.my-carousel .b1, .my-carousel .b2, .my-carousel .b3, #buyoutfit .sh1, #buyoutfit .sh2, #buyoutfit .sh3, #buyoutfit .sh4, #modallookshop .s2 {
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: cover; }
@@ -465,8 +465,8 @@ input[type=number] {
 
 .mega-menu {
   position: static;
-  left: 0;
-  right: 0;
+  left: 5%;
+  right: 7%;
   top: 50px;
   padding: 0;
   color: #ea728c; }
@@ -500,16 +500,8 @@ input[type=number] {
     .wish .recent:hover {
       text-decoration: none; }
 
-.kids-page {
-  background-image: url(../images/kids-page.webp);
-  background-position: top center !important; }
-
-.womans-page {
-  background-image: url(../images/womans-page.jpg); }
-
-.men-page {
-  background-image: url(../images/men-page.webp);
-  background-position: top center !important; }
+.men-page img, .womans-page img, .kids-page img {
+  height: 100%; }
 
 #services {
   margin-top: 80px;

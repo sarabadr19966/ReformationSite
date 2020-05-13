@@ -1,8 +1,8 @@
 .mega-menu
 {
   position: static;
-  left: 0;
-  right: 0;
+  left: 5%;
+  right:7%;
   top: 50px;
   padding: 0;
   color: $pink;
@@ -57,22 +57,10 @@
     }
 }
 
-.kids-page
-{
-    background-image: url(../images/kids-page.webp);
-    @extend %backgroundImg;
-    background-position: top center !important ;
 
-}
-.womans-page
+.men-page,.womans-page,.kids-page
 {
-    background-image: url(../images/womans-page.jpg);
-    @extend %backgroundImg;
-}
-
-.men-page
-{
-    background-image: url(../images/men-page.webp);
-    @extend %backgroundImg;
-    background-position: top center !important;
+   img{
+       height: 100%;
+   }
 }
