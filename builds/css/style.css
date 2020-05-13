@@ -310,7 +310,7 @@ input[type=number] {
     transition: all .35s; }
     #ourproducts .s img {
       width: 100%;
-      height: 100%; }
+      height: calc(100% - 50px); }
 
 #deal-of-the-week {
   background-image: url(../images/deal_ofthe_week.png);
@@ -392,6 +392,13 @@ input[type=number] {
   background-image: url(../images/shooplook4.jpg);
   background-position: top center !important; }
 
+#modallookshop .modal-dialog {
+  overflow-y: initial !important; }
+
+#modallookshop .modal-body {
+  max-height: calc(85vh);
+  overflow-y: auto; }
+
 #modallookshop .title, #modallookshop #mn-account h6, #mn-account #modallookshop h6, #modallookshop #mn-register h6, #mn-register #modallookshop h6 {
   font-size: larger !important; }
 
@@ -401,7 +408,8 @@ input[type=number] {
 
 #modallookshop .chosephot img {
   width: 57px !important;
-  height: 86.063px !important; }
+  height: 86.063px !important;
+  cursor: pointer; }
 
 #modallookshop .white {
   background-color: white;

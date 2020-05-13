@@ -54,6 +54,13 @@
 
 }
 #modallookshop{
+    .modal-dialog{
+        overflow-y: initial !important
+    }
+    .modal-body{
+        max-height: calc(85vh);
+        overflow-y: auto;
+    }
     .title{
         font-size: larger !important;
     }
@@ -65,6 +72,7 @@
         img{
         width: 57px !important;
         height: 86.063px !important;
+        cursor: pointer;
         }
     }
     .white{
