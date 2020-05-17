@@ -616,18 +616,22 @@ footer {
   height: 30px; }
 
 .colors .navy {
-  background-color: navy; }
+  background-color: navy;
+  cursor: pointer; }
 
 .colors .vintagewhite {
-  background-color: #eff1f1; }
+  background-color: #eff1f1;
+  cursor: pointer; }
 
 .colors .red-flowry {
-  background-image: url(../images/redflowry.jpg); }
+  background-image: url(../images/redflowry.jpg);
+  cursor: pointer; }
 
 .colors .blue-flowry {
-  background-image: url(../images/blueflowry.jpg); }
+  background-image: url(../images/blueflowry.jpg);
+  cursor: pointer; }
 
-.clr {
+.clr2 {
   cursor: pointer; }
 
 .check-mn {
@@ -872,25 +876,30 @@ footer {
     top: 0;
     right: 0;
     left: 0;
-    background-color: #fce7cd;
+    background-color: #fff;
     z-index: 2000; }
     #mn-oneitem .fulldesk .img {
-      max-height: 100vh;
+      height: 100vh;
+      line-height: 100vh;
+      vertical-align: middle;
       overflow-y: scroll; }
+      #mn-oneitem .fulldesk .img img {
+        width: 100%; }
     #mn-oneitem .fulldesk .closing {
-      cursor: pointer; }
+      cursor: pointer;
+      position: absolute;
+      right: 30px; }
   #mn-oneitem .card:not(:last-of-type) {
     border-bottom: 1px solid #ea728c; }
   #mn-oneitem .card button {
     padding: 0; }
   #mn-oneitem .information h2 {
     color: #ea728c !important; }
+  #mn-oneitem .blue-flowry {
+    cursor: default; }
 
 .sizeguide {
   color: #2a5592 !important; }
-
-.red-flowry {
-  cursor: pointer; }
 
 .colors span {
   border: 2px solid #132743; }

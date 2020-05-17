@@ -51,14 +51,24 @@
         right: 0;
         left: 0;
     
-        background-color:rgb(252, 231, 205);
+        background-color:#fff;;
         z-index: 2000;
         .img{
-            max-height: 100vh;
+            
+            height:100vh;
+            line-height: 100vh;
+            vertical-align: middle;
+             
             overflow-y: scroll;
+            img
+            {
+                width:100%;
+            }
         }
         .closing {
             cursor: pointer;
+            position: absolute;
+            right: 30px;
         }
     }
     .card{
@@ -78,19 +88,21 @@
 
         }
     }
+    .blue-flowry{
+    cursor: default;
+}
 }
 
 .sizeguide{
     color: lighten($color: $purple, $amount: 20) !important;
 }
-.red-flowry{
-    cursor: pointer;
-}
+
+
 .colors{
     span{
         border: 2px solid $purple;
     }
-    
+
 }
 .mightlike{
     a{

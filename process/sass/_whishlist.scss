@@ -15,6 +15,7 @@
         width: 70%;
         height: 30px;
         left:6%;
+      
     }
     h5{
         color: $pink;
@@ -102,26 +103,33 @@
     span{
         display: inline-block;
         width: 30px;
-        height: 30px;
-        
+        height: 30px;        
     }
     .navy
     {
         background-color: navy;
+        cursor: pointer;
+
     }
     .vintagewhite
     {
         background-color:#eff1f1;
+        cursor: pointer;
+
     }
     .red-flowry{
         background-image: url(../images/redflowry.jpg);
+        cursor: pointer;
+
     }
     .blue-flowry{
         background-image: url(../images/blueflowry.jpg);
+        cursor: pointer;
+
     }
 }
 
-.clr{
+.clr2{
     cursor: pointer;
 }
 
