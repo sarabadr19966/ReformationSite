@@ -12,8 +12,8 @@ $("document").ready(function(){
 
   });
 
-  $('.mycarousel').carousel({
-    interval: 4000,
+  $('.my-carousel').carousel({
+    interval: 5000,
     pause:false
   });
   
@@ -26,7 +26,7 @@ $("document").ready(function(){
  $(".carousel-caption").addClass("animated slideInUp");
  
  //call stop animation function after 12s
- setTimeout(stopAnimation,12000,".carousel-caption","slideInUp");
+ setTimeout(stopAnimation,15000,".carousel-caption","slideInUp");
 
   // what to do ontouch screen
   if(is_touch_device1()){

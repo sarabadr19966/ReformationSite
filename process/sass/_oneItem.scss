@@ -51,7 +51,7 @@
         right: 0;
         left: 0;
     
-        background-color:#fff;;
+        background-color:#f8e0c8;
         z-index: 2000;
         .img{
             
@@ -63,12 +63,14 @@
             img
             {
                 width:100%;
+
             }
         }
         .closing {
             cursor: pointer;
             position: absolute;
-            right: 30px;
+            right: 20px;
+            margin-left: 10px;
         }
     }
     .card{

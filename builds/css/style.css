@@ -310,7 +310,7 @@ input[type=number] {
     transition: all .35s; }
     #ourproducts .s img {
       width: 100%;
-      height: calc(100% - 50px); }
+      height: 100%; }
 
 #deal-of-the-week {
   background-image: url(../images/deal_ofthe_week.png);
@@ -443,6 +443,7 @@ input[type=number] {
 #stock {
   width: 100%;
   overflow-x: auto;
+  overflow-y: hidden;
   white-space: nowrap;
   -ms-overflow-style: none;
   scrollbar-width: none; }
@@ -484,10 +485,10 @@ input[type=number] {
     color: #2a5592 !important; }
   .cart .row {
     height: auto; }
-  .cart h6 {
+  .cart h6 a {
     color: #ea728c !important;
     font-weight: bold; }
-    .cart h6:hover {
+    .cart h6 a:hover {
       text-decoration: underline; }
   .cart .content {
     height: 300px;
@@ -691,7 +692,7 @@ footer {
 .container-check input:checked ~ .checkmark {
   background-color: #ea728c; }
 
-.custom-select {
+select {
   border-color: #ea728c !important;
   background: none !important;
   color: #ea728c !important;
@@ -876,7 +877,7 @@ footer {
     top: 0;
     right: 0;
     left: 0;
-    background-color: #fff;
+    background-color: #f8e0c8;
     z-index: 2000; }
     #mn-oneitem .fulldesk .img {
       height: 100vh;
@@ -888,7 +889,8 @@ footer {
     #mn-oneitem .fulldesk .closing {
       cursor: pointer;
       position: absolute;
-      right: 30px; }
+      right: 20px;
+      margin-left: 10px; }
   #mn-oneitem .card:not(:last-of-type) {
     border-bottom: 1px solid #ea728c; }
   #mn-oneitem .card button {
