@@ -65,59 +65,72 @@ $("document").ready(function(){
   }}
 
   if($('#modallookshop') && $('#modallookshop').length){
+    var pant=0;
+    var jacket=0;
 
       $('.modalcrs').carousel({
         interval: false,
       })
     $('.fo').click(function(){
-      $('.chart').removeClass('clicked');
-      $('.favv').html('Add To Favorite');
-    $('#sizeSelect').html("Add To Bag");
-      $('.modalcrs').removeClass('slide'); 
-      $('.title').html("Boswell Trouser");
-      $('.price').html("EGP2,644.30");
-      $('.colorechoosen').html("Ivory");
-      $('.soldone').toggleClass('sold')
-      $('.white,.black ').addClass('d-none')
-      $('.Ivory').removeClass('d-none')
+      if(pant ===0){
+        $('.chart').removeClass('clicked');
+        $('.favv').html('Add To Favorite');
+       $('#sizeSelect').html("Add To Bag");
+        $('.modalcrs').removeClass('slide'); 
+        $('.title').html("Boswell Trouser");
+        $('.price').html("EGP2,644.30");
+        $('.colorechoosen').html("Ivory");
+        $('.soldone').toggleClass('sold')
+        $('.white,.black ').addClass('d-none')
+        $('.Ivory').removeClass('d-none')
+        $('.modalcrs').carousel(0); 
+        $('.Firstslide').attr("src","images/shlok.jpg");
+        $('.Secondslide').attr("src","images/shlok1.jpg");
+        $('.Thirdslide').attr("src","images/shlok12.jpg");
+        $('.Fourthslide').attr("src","images/shlok13.jpg");
+        $('.modalcrs').carousel(0); 
+        $('.modalcrs').addClass('slide'); 
+        pant++;
+        jacket=0;
+        $(this).css('cursor','default');
+        $('.so').css('cursor','pointer');
+      }
+    
 
-      $('.modalcrs').carousel(0); 
-      $('.Firstslide').attr("src","images/shlok.jpg");
-          $('.Secondslide').attr("src","images/shlok1.jpg");
-          $('.Thirdslide').attr("src","images/shlok12.jpg");
-          $('.Fourthslide').attr("src","images/shlok13.jpg");
+
+
+      $('.so').click(function(){
+        if (jacket ===0){
+          $('.white,.black ').removeClass('d-none')
+          $('.Ivory').addClass('d-none')
+          $('.chart').removeClass('clicked');
+          $('.favv').html('Add To Favorite');
+          $('#sizeSelect').html("Add To Bag");
+          $('.modalcrs').removeClass('slide'); 
+          $('.title').html("Niko Blazer");
+          $('.price').html("EGP3,116.50");
+          $('.colorechoosen').html("White");
+          $('.colors').removeClass('d-none');
+          $('.soldone').toggleClass('sold disabled')
           $('.modalcrs').carousel(0); 
+          $('.Firstslide').attr("src","images/shlok2.jpg");
+          $('.Secondslide').attr("src","images/shlok21.jpg");
+          $('.Thirdslide').attr("src","images/shlok22.jpg");
+          $('.Fourthslide').attr("src","images/shlok23.jpg");
           $('.modalcrs').addClass('slide'); 
-
-
-
+          pant=0;
+          jacket++;
+          $(this).css('cursor','default');
+          $('.fo').css('cursor','pointer');
+    
+        }
+       
+  
+  
+      });
     }) 
 
 
-    $('.so').click(function(){
-
-      $('.white,.black ').removeClass('d-none')
-      $('.Ivory').addClass('d-none')
-      $('.chart').removeClass('clicked');
-      $('.favv').html('Add To Favorite');
-      $('#sizeSelect').html("Add To Bag");
-      $('.modalcrs').removeClass('slide'); 
-      $('.title').html("Niko Blazer");
-      $('.price').html("EGP3,116.50");
-      $('.colorechoosen').html("White");
-      $('.colors').removeClass('d-none');
-      $('.soldone').toggleClass('sold disabled')
-
-      $('.modalcrs').carousel(0); 
-      $('.Firstslide').attr("src","images/shlok2.jpg");
-      $('.Secondslide').attr("src","images/shlok21.jpg");
-      $('.Thirdslide').attr("src","images/shlok22.jpg");
-      $('.Fourthslide').attr("src","images/shlok23.jpg");
-        $('.modalcrs').addClass('slide'); 
-
-
-
-    });
     var clickedwhite=0;
     var clickedblack=0;
     $('.black').click(function(){

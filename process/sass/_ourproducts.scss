@@ -1,20 +1,17 @@
 #ourproducts
 {
-    
-    margin-top: 50px;
     margin-bottom: 100px;
-    .line{
-      margin-bottom: 60px;
-    }
-
+  
   .s
   {
+    height: 80vh;
+    overflow: hidden;
     transition: all .35s;
     img{
+      height: 100%;
       width: 100%;
-      height:100%;
     }
-
+  
   }
 
 }

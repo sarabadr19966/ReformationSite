@@ -302,15 +302,14 @@ input[type=number] {
   color: white; }
 
 #ourproducts {
-  margin-top: 50px;
   margin-bottom: 100px; }
-  #ourproducts .line {
-    margin-bottom: 60px; }
   #ourproducts .s {
+    height: 80vh;
+    overflow: hidden;
     transition: all .35s; }
     #ourproducts .s img {
-      width: 100%;
-      height: 100%; }
+      height: 100%;
+      width: 100%; }
 
 #deal-of-the-week {
   background-image: url(../images/deal_ofthe_week.png);
@@ -396,7 +395,7 @@ input[type=number] {
   overflow-y: initial !important; }
 
 #modallookshop .modal-body {
-  max-height: calc(85vh);
+  max-height: calc(100vh);
   overflow-y: auto; }
 
 #modallookshop .title, #modallookshop #mn-account h6, #mn-account #modallookshop h6, #modallookshop #mn-register h6, #mn-register #modallookshop h6 {
@@ -408,8 +407,7 @@ input[type=number] {
 
 #modallookshop .chosephot img {
   width: 57px !important;
-  height: 86.063px !important;
-  cursor: pointer; }
+  height: 86.063px !important; }
 
 #modallookshop .white {
   background-color: white;
@@ -422,12 +420,16 @@ input[type=number] {
 
 #modallookshop .Ivory {
   background-color: #fafae9;
-  border-radius: 50%; }
+  border-radius: 50%;
+  cursor: default; }
 
 #modallookshop .s2 {
   height: 800px;
   width: 400px !important;
   background-image: url(../images/shoplook1.jpg); }
+
+#modallookshop .fo {
+  cursor: pointer; }
 
 #shoptops h5 {
   font-size: 1.8rem;

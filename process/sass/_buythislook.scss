@@ -58,7 +58,7 @@
         overflow-y: initial !important
     }
     .modal-body{
-        max-height: calc(85vh);
+        max-height: calc(100vh);
         overflow-y: auto;
     }
     .title{
@@ -72,7 +72,6 @@
         img{
         width: 57px !important;
         height: 86.063px !important;
-        cursor: pointer;
         }
     }
     .white{
@@ -88,6 +87,7 @@
     .Ivory{
         background-color:rgb(250, 250, 233);
         border-radius: 50%; 
+        cursor: default;
     }
     .s2{
         height: 800px;
@@ -95,6 +95,8 @@
         background-image: url(../images/shoplook1.jpg);
         @extend %backgroundImg;
     }
-
+    .fo{
+        cursor: pointer ;
+    }
 
 }
