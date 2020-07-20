@@ -116,9 +116,7 @@ input[type=number] {
 
 .inc-dec{
   width: 30px !important;
-  
   border: 1px solid $pink;
-  
 }
 
 .inc , .dec{
@@ -154,7 +152,7 @@ input[type=number] {
 
 // modal for account
 .modal-backdrop {
-  z-index: 90;
+  z-index: 100;
 }
 .modal-header
 {
@@ -182,6 +180,9 @@ input[type=number] {
       
 
   }
+}
+.modal{
+  transition: opacity .35s;
 }
 
 .new{

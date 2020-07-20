@@ -14,19 +14,18 @@ $("document").ready(function(){
 
   $('.my-carousel').carousel({
     interval: 5000,
-    pause:false
+    pause:false,
+    touch:true
   });
-  
-     //for mobile nav
+  $(function() {
+    $('#event-modal').modal({
+        backdrop: true
+    });
+});  
+ //for mobile nav
   $('.navbar-toggler,.overlay').on('click',function(){
     $('.mobileMenu,.overlay').toggleClass('open');
   })
-
- // animate carousel caption
- $(".carousel-caption").addClass("animated slideInUp");
- 
- //call stop animation function after 12s
- setTimeout(stopAnimation,15000,".carousel-caption","slideInUp");
 
   // what to do ontouch screen
   if(is_touch_device1()){
@@ -264,7 +263,7 @@ $("document").ready(function(){
     $(".clr").click(function(){ 
       var pp=ParentOfParent(this);
       $(`.${pp} .colors`).removeClass("d-none");
-      $(`.${pp} .colors,.${pp}`).mouseleave(function(){
+      $(`.${pp}`).mouseleave(function(){
         $(`.${pp} .colors`).addClass("d-none");
         
       })
@@ -459,7 +458,6 @@ $("document").ready(function(){
         $('.main-photo img').attr('src',src);
         clickedred++;
         clickedblue=0;
-        if(!is_touch_device1){
           $('#zoom_01').data('zoom-image',src).elevateZoom({
             zoomType: "inner",
             cursor: 'crosshair',
@@ -470,7 +468,7 @@ $("document").ready(function(){
          
           $('.blue-flowry').css('cursor','pointer');
           $(this).css('cursor','default');
-        }
+        
       }
    
 
@@ -485,7 +483,6 @@ $("document").ready(function(){
           $('.main-photo img').attr('src',src);
           clickedblue++;
           clickedred=0;
-          if(!is_touch_device1){
             $('#zoom_01').data('zoom-image',src).elevateZoom({
               zoomType: "inner",
               cursor: 'crosshair',
@@ -496,7 +493,7 @@ $("document").ready(function(){
           
             $('.red-flowry').css('cursor','pointer');
             $(this).css('cursor','default');
-        }
+        
       }
       })
     })
@@ -625,11 +622,6 @@ $("document").ready(function(){
 
 })
 
-//stop animation function
-function stopAnimation(ele,cls)
-{
-  $(ele).removeClass(cls); 
-}
 
 //to know if im in touch device
 function is_touch_device1() {

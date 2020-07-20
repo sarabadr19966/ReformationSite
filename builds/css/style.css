@@ -155,7 +155,7 @@ input[type=number] {
   background: #555; }
 
 .modal-backdrop {
-  z-index: 90; }
+  z-index: 100; }
 
 .modal-header {
   border: none; }
@@ -173,6 +173,9 @@ input[type=number] {
     color: gray !important; }
     .modal-body a.pass:hover {
       text-decoration: underline !important; }
+
+.modal {
+  transition: opacity .35s; }
 
 .new {
   margin-left: -75px; }
@@ -300,6 +303,15 @@ input[type=number] {
   font-size: 30px;
   font-weight: bold;
   color: white; }
+
+.carousel.my-carousel .carousel-item {
+  transition: all 2s; }
+
+.carousel-caption {
+  animation: slideInUp;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+  /* don't forget to set a duration! */ }
 
 #ourproducts {
   margin-bottom: 100px; }

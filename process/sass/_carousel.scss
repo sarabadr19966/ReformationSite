@@ -49,8 +49,6 @@
   }
 }
 
-
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 50px;
@@ -78,8 +76,12 @@
   color: white;
 }
 
-  
+.carousel.my-carousel .carousel-item {
+  transition: all 2s;
+}
 
-
-
+.carousel-caption{
+  animation: slideInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
 
