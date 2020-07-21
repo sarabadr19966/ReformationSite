@@ -28,7 +28,13 @@
       right: 20px;
       width: 20px;
     }
-  }
+    .search-toggle {
+     
+      top: 8px;
+      right: 15px;
+    }
+  
+ 
   
   .brand
   {
@@ -73,6 +79,10 @@
 }
 @media(max-width:767px)
 {
+  .search-box {
+    left: 8px !important;
+    right: 8px !important;}
+  }
   #mn-oneitem{
     margin-top: 35px !important; 
   

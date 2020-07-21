@@ -182,49 +182,16 @@ input[type=number] {
 .new {
   margin-left: -75px; }
 
-.search-button {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translate(0, -50%); }
-
 .search-toggle {
   cursor: pointer;
-  position: relative;
+  position: absolute;
+  right: 40px;
+  top: 18px;
   display: block;
   height: 20px;
   width: 20px; }
-  .search-toggle::before, .search-toggle::after {
-    content: '';
-    position: absolute;
-    display: block;
-    transition: all 0.1s; }
-  .search-toggle::before {
-    border: 2px solid #ea728c;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    left: -2px;
-    top: -2px; }
-  .search-toggle::after {
-    height: 3px;
-    width: 10px;
-    background: #ea728c;
-    top: 18px;
-    left: 14px;
-    transform: rotate(45deg); }
-  .search-toggle.active::before {
-    width: 2px;
-    background-color: #ea728c;
-    border-width: 1px;
-    border-radius: 0;
-    transform: rotate(45deg);
-    top: -5px;
-    left: 3px; }
-  .search-toggle.active::after {
-    width: 20px;
-    left: -5px;
-    top: 4px; }
+  .search-toggle .fa-times {
+    display: none; }
 
 .search-input:focus {
   outline: none; }
@@ -233,8 +200,8 @@ input[type=number] {
   position: absolute;
   bottom: 0;
   margin: 0;
-  left: 4.5vw;
-  width: 90vw;
+  left: 40px;
+  right: 40px;
   height: 100%;
   max-height: 0;
   transform: translateY(100%);
@@ -255,6 +222,12 @@ input[type=number] {
   max-height: 40px; }
   #header-1.show .search-box .search-input {
     display: block; }
+
+#header-1.show .search-toggle .fa-search {
+  display: none; }
+
+#header-1.show .search-toggle .fa-times {
+  display: block; }
 
 .my-carousel {
   height: 100vh; }
@@ -1014,29 +987,37 @@ select {
     .my-nav .search-button {
       right: 20px;
       width: 20px; }
-  .brand {
-    font-size: large;
-    margin: 0 auto; }
-  .br {
-    font-size: .75em; }
-  .cm {
-    display: none; }
-  #carousell {
-    margin-top: 37px; }
-  .content {
-    margin-top: 100px; }
-  #mn-cart {
-    border-bottom: 0.5px solid #2a5592; }
-  #mn-account, #mn-register, .check-mn, #mn-cart, .mn, #mn-contact {
-    margin-top: 70px !important; }
-  #mn-contact span.title {
-    font-size: large !important;
-    font-weight: normal !important; }
-  #mn-contact span.dif {
-    font-size: meduim !important;
-    font-weight: normal !important; } }
+    .my-nav .search-toggle {
+      top: 8px;
+      right: 15px; }
+    .my-nav .brand {
+      font-size: large;
+      margin: 0 auto; }
+    .my-nav .br {
+      font-size: .75em; }
+    .my-nav .cm {
+      display: none; }
+    .my-nav #carousell {
+      margin-top: 37px; }
+    .my-nav .content {
+      margin-top: 100px; }
+    .my-nav #mn-cart {
+      border-bottom: 0.5px solid #2a5592; }
+    .my-nav #mn-account, .my-nav #mn-register, .my-nav .check-mn, .my-nav #mn-cart, .my-nav .mn, .my-nav #mn-contact {
+      margin-top: 70px !important; }
+    .my-nav #mn-contact span.title {
+      font-size: large !important;
+      font-weight: normal !important; }
+    .my-nav #mn-contact span.dif {
+      font-size: meduim !important;
+      font-weight: normal !important; } }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) and (max-width: 767px) {
+  .search-box {
+    left: 8px !important;
+    right: 8px !important; } }
+
+@media (max-width: 991px) {
   #mn-oneitem {
     margin-top: 35px !important; }
   .b1 {
@@ -1086,7 +1067,7 @@ select {
     bottom: 0;
     z-index: 1102;
     left: 0;
-    transform: translateX(-100%);
+    transform: translateX(-101%);
     transition: all ease .75s; }
     .mobileMenu.open {
       transform: translateX(0); }
