@@ -30,7 +30,6 @@ $("document").ready(function(){
   // what to do ontouch screen
   if(is_touch_device1()){
     $(".shop").removeClass("shop-desk");
-    $(".type").removeClass("type-desk");
     $("footer").addClass("ftr");   
        
   }
@@ -48,11 +47,10 @@ $("document").ready(function(){
   if($('#home') && $('#home').length ){
     // add color when refresh & not at the top
     myNav = $(".my-nav");
-    myNav.toggleClass('nav1', $(this).scrollTop() > myNav.height());
+    myNav.toggleClass('nav1 nav1Animation', $(this).scrollTop() > myNav.height());
       $(document).scroll(function ()
-      {  
-     
-        myNav.toggleClass('nav1', $(this).scrollTop() > myNav.height());
+      { 
+        myNav.toggleClass('nav1 nav1Animation', $(this).scrollTop() > myNav.height()+280);
       });
   }  
 
@@ -310,6 +308,7 @@ $("document").ready(function(){
 
   // cart stuff
   if($('#cart') && $('#cart').length){
+    
     totalPrice("item1");
     totalPrice("item2");
     carttotal=allTotal-promo;

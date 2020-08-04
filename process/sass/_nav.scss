@@ -1,12 +1,15 @@
 .my-nav
 {
-  transition: all .5s;
   margin: 0;
   padding-top: 0 !important;
   padding-bottom:0 !important;
   font-weight: bold;
   font-size: large;
- 
+  position: absolute;
+  transition: all .5s;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   li{
    a{
       color: white !important ;
@@ -71,7 +74,15 @@
 //nav after scrolling
 .nav1
 {
+
   background-color: $purple;
+  position: fixed;
+
+}
+
+.nav1Animation{
+  animation: slideInDown;
+  animation-duration: .5s;
 }
 
 .navbar-toggler{

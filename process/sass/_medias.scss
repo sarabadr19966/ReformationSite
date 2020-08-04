@@ -1,6 +1,8 @@
 @media (max-width:991px)
 
-{
+{.nav1Animation{
+  animation: none;
+}
   footer{
     h6{
       font-size: x-large;
@@ -14,16 +16,11 @@
     font-size: 1.2rem !important;
 
   }
-  #ourproducts
-  {
-    img{
-      min-height: 60vh !important;
-    }
-  }
   .my-nav
   {
     background-color:$purple;
     margin-left: 0 !important;
+    position: fixed;
    .search-button{
       right: 20px;
       width: 20px;
@@ -76,46 +73,40 @@
    }
   }
 
-}
-@media(max-width:767px)
-{
-  .search-box {
-    left: 8px !important;
-    right: 8px !important;}
   }
   #mn-oneitem{
     margin-top: 35px !important; 
-  
-  }
-  .b1 {
-    background-image: url(../images/b3mobile.jpg) !important;
 
-  }
-  .b2{
-    background-image: url(../images/b2.jpg) !important;
-
-  }
-  .b3{
-    background-image: url(../images/b1mobile.jpg) !important;
   }
   .my-carousel {
-  height: calc(100vmax - 30px);
-  .carousel-item
-  {
-    height: calc(100vmax - 30px);
-
-    
-  }}
-
+    top:35px;
+    margin-bottom: 80px;
+  }
 }
-@media(max-width:1200px)and(min-width:768px){
+@media(max-width:767px)
+{
+
+  .search-box {
+    left: 8px !important;
+    right: 8px !important;}
+    .b1 {
+      background-image: url(../images/b3mobile.jpg) !important;
+  
+    }
+    .b2{
+      background-image: url(../images/b2.jpg) !important;
+  
+    }
+    .b3{
+      background-image: url(../images/b1mobile.jpg) !important;
+    }
+  }
+@media(max-width:1200px)and(min-width:767px){
   .my-carousel {
     height: 42vmax;
     .carousel-item
     {
      height: 42vmax;
-  
-     
     }
   }
   .cm{

@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald|Oxanium&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
 .my-nav {
-  transition: all .5s;
   margin: 0;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   font-weight: bold;
-  font-size: large; }
+  font-size: large;
+  position: absolute;
+  transition: all .5s;
+  left: 0;
+  right: 0;
+  z-index: 1000; }
   .my-nav li a {
     color: white !important;
     cursor: pointer; }
@@ -41,7 +45,12 @@
   font-family: 'Pacifico', cursive; }
 
 .nav1 {
-  background-color: #132743; }
+  background-color: #132743;
+  position: fixed; }
+
+.nav1Animation {
+  animation: slideInDown;
+  animation-duration: .5s; }
 
 .navbar-toggler {
   border: none !important;
@@ -142,7 +151,7 @@ input[type=number] {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px; }
+  width: 5px; }
 
 /* Track */
 ::-webkit-scrollbar-track {
@@ -291,7 +300,8 @@ input[type=number] {
 #ourproducts {
   margin-bottom: 100px; }
   #ourproducts .s {
-    height: 80vh;
+    margin-top: 50px;
+    height: 600px;
     overflow: hidden;
     transition: all .35s; }
     #ourproducts .s img {
@@ -435,7 +445,7 @@ input[type=number] {
   overflow-y: hidden;
   white-space: nowrap;
   -ms-overflow-style: none;
-  scrollbar-width: none; }
+  scrollbar-width: 0; }
   #stock::-webkit-scrollbar {
     display: none; }
   #stock .stk {
@@ -973,17 +983,18 @@ select {
     color: #ea728c; }
 
 @media (max-width: 991px) {
+  .nav1Animation {
+    animation: none; }
   footer h6 {
     font-size: x-large; }
   h4 {
     font-size: 1.7rem; }
   h5 {
     font-size: 1.2rem !important; }
-  #ourproducts img {
-    min-height: 60vh !important; }
   .my-nav {
     background-color: #132743;
-    margin-left: 0 !important; }
+    margin-left: 0 !important;
+    position: fixed; }
     .my-nav .search-button {
       right: 20px;
       width: 20px; }
@@ -1010,28 +1021,25 @@ select {
       font-weight: normal !important; }
     .my-nav #mn-contact span.dif {
       font-size: meduim !important;
-      font-weight: normal !important; } }
-
-@media (max-width: 991px) and (max-width: 767px) {
-  .search-box {
-    left: 8px !important;
-    right: 8px !important; } }
-
-@media (max-width: 991px) {
+      font-weight: normal !important; }
   #mn-oneitem {
     margin-top: 35px !important; }
+  .my-carousel {
+    top: 35px;
+    margin-bottom: 80px; } }
+
+@media (max-width: 767px) {
+  .search-box {
+    left: 8px !important;
+    right: 8px !important; }
   .b1 {
     background-image: url(../images/b3mobile.jpg) !important; }
   .b2 {
     background-image: url(../images/b2.jpg) !important; }
   .b3 {
-    background-image: url(../images/b1mobile.jpg) !important; }
-  .my-carousel {
-    height: calc(100vmax - 30px); }
-    .my-carousel .carousel-item {
-      height: calc(100vmax - 30px); } }
+    background-image: url(../images/b1mobile.jpg) !important; } }
 
-@media (max-width: 1200px) and (min-width: 768px) {
+@media (max-width: 1200px) and (min-width: 767px) {
   .my-carousel {
     height: 42vmax; }
     .my-carousel .carousel-item {
