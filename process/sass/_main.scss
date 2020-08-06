@@ -116,7 +116,11 @@ input[type=number] {
 
 .inc-dec{
   width: 30px !important;
+  height: 30px;
   border: 1px solid $pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .inc , .dec{
