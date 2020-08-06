@@ -118,13 +118,19 @@ input[type=number] {
   width: 30px !important;
   height: 30px;
   border: 1px solid $pink;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  line-height: 31px;
+  vertical-align: middle;
 }
 
 .inc , .dec{
+  
   @extend .inc-dec;
+}
+.trash{
+  width: 30px;
+  height: 30px;
+  line-height: 35px;
+  vertical-align: middle;
 }
 
 .form-control{
