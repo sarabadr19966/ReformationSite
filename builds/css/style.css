@@ -214,7 +214,7 @@ input[type=number] {
 .search-input:focus {
   outline: none; }
 
-#header-1 .search-box {
+.search-box {
   position: absolute;
   bottom: 0;
   margin: 0;
@@ -225,7 +225,7 @@ input[type=number] {
   transform: translateY(100%);
   background-color: #ea728c;
   transition: all 0.3s; }
-  #header-1 .search-box .search-input {
+  .search-box .search-input {
     width: 100%;
     height: 100%;
     padding: 0 1em;
@@ -233,18 +233,18 @@ input[type=number] {
     background-color: transparent;
     display: none;
     color: white; }
-    #header-1 .search-box .search-input::-webkit-input-placeholder {
+    .search-box .search-input::-webkit-input-placeholder {
       color: white; }
 
-#header-1.show .search-box {
+.show .search-box {
   max-height: 40px; }
-  #header-1.show .search-box .search-input {
+  .show .search-box .search-input {
     display: block; }
 
-#header-1.show .search-toggle .fa-search {
+.show .search-toggle .fa-search {
   display: none; }
 
-#header-1.show .search-toggle .fa-times {
+.show .search-toggle .fa-times {
   display: block; }
 
 .my-carousel {

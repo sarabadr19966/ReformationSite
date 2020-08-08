@@ -18,9 +18,6 @@
 		outline: none;
 	}
 }
-
-
-#header-1 {
 	.search-box {
 		position: absolute;
 		bottom: 0;
@@ -48,7 +45,7 @@
 		}
 	}
 
-	&.show {
+	.show {
 
 		.search-box {
 			max-height: 40px;
@@ -67,4 +64,3 @@
 		}
 		
 	}
-}
