@@ -545,6 +545,8 @@ footer {
   footer p {
     color: #ea728c;
     font-size: larger; }
+  footer .k {
+    height: 38px; }
   footer button {
     border: none !important;
     height: 38px; }
