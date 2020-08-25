@@ -218,7 +218,7 @@ $("document").ready(function(){
     startAt: 0,
     gap:30,
     animationTimingFunc:"ease",
-    animationDuration:1000,
+    animationDuration:2000,
     autoplay:3000,
     swipeThreshold: 60,
     perView: 3,
