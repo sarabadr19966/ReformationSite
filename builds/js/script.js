@@ -219,7 +219,7 @@ $("document").ready(function(){
     gap:30,
     animationTimingFunc:"ease",
     animationDuration:1000,
-    autoplay:2000,
+    autoplay:3000,
     swipeThreshold: 60,
     perView: 3,
     breakpoints: {
