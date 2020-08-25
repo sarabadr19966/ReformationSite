@@ -316,6 +316,8 @@ input[type=number] {
     #ourproducts .s img {
       height: 100%;
       width: 100%; }
+  #ourproducts .glide__arrow {
+    top: 55% !important; }
 
 #deal-of-the-week {
   background-image: url(../images/deal_ofthe_week.png);
