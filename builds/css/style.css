@@ -456,7 +456,7 @@ input[type=number] {
   overflow-y: hidden;
   white-space: nowrap;
   -ms-overflow-style: none;
-  scrollbar-width: 0; }
+  scrollbar-width: none; }
   #stock::-webkit-scrollbar {
     display: none; }
   #stock .stk {
